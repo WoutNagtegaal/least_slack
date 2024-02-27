@@ -10,8 +10,9 @@
 
 int main(int argc, char **argv) {
 	// check if there were any arguments filled in from the command line
-	if(argc < 2) {
-		std::cout << "Please enter a filename as the first argument" << std::endl;
+	if (argc < 2) {
+		std::cout << "Please enter a filename as the first argument"
+				<< std::endl;
 		return 1;
 	}
 
@@ -36,7 +37,7 @@ int main(int argc, char **argv) {
 			std::cout << "not found" << std::endl;
 		}
 	}
-	for (JobFactory j: jobFactories) {
+	for (JobFactory j : jobFactories) {
 		// tasktests does temporary tests, this has to be replaced with the actual final logic
 		j.taskTests();
 		std::cout << j;

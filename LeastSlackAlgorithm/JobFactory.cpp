@@ -39,22 +39,50 @@ void JobFactory::initJobs(std::vector<std::vector<unsigned short> > config) {
 	}
 }
 
-// TODO this is a stupid test function
-// replace with seperate functions
-void JobFactory::taskTests() {
+void JobFactory::sortJobsByJobId() {
+	// sorts jobs by ID for easier visualisation
+	auto jobIdSort = [](const Job &a, const Job &b) {
+		return a.getJobId() < b.getJobId();
+	};
+	std::sort(jobs.begin(), jobs.end(), jobIdSort);
+}
+
+void JobFactory::calculateSlack() {
+	// preparation for the slack calculation
 	for (Job &j : this->jobs) {
 		j.calculateEarliestStartTimes();
 		j.calculateDuration();
 	}
+	// making seperate variable so it isn't calcuted for every job
+	unsigned short longestJobDuration = this->getLongestJobDuration();
+	for (Job &j : this->jobs) {
+		j.calculateSlack(longestJobDuration);
+		std::cout << j;
+	}
+}
+
+void JobFactory::sortJobsBySlack() {
+	// sorts jobs by slack to decide the next task
+	auto jobSlackSort = [](const Job &a, const Job &b) {
+		return a.getSlack() < b.getSlack();
+	};
+	std::sort(jobs.begin(), jobs.end(), jobSlackSort);
+}
+
+unsigned short JobFactory::getLongestJobDuration() {
 	auto maxDuration = [](const Job &a, const Job &b) {
 		return a.getDuration() < b.getDuration();
 	};
 	auto longestTask = std::max_element(jobs.begin(), jobs.end(), maxDuration);
-//	std::cout << *longestTask;
-	for (Job &j : this->jobs) {
-		j.calculateSlack(longestTask->getDuration());
-		std::cout << j;
-	}
+	return longestTask->getDuration();
+}
+
+// TODO this is a stupid test function
+// replace with seperate functions
+void JobFactory::taskTests() {
+	this->calculateSlack();
+	this->sortJobsBySlack();
+
 }
 
 unsigned short JobFactory::getNMachines() const {

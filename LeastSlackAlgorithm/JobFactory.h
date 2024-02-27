@@ -24,6 +24,9 @@ public:
 	JobFactory(const ConfigReader &rhs);
 
 	void initJobs(std::vector<std::vector<unsigned short>> config);
+	void calculateSlack();
+	void sortJobsByJobId();
+	void sortJobsBySlack();
 
 	void taskTests(); // replace with the proper devided functions!!!!!!!!!
 
@@ -34,6 +37,8 @@ public:
 	virtual ~JobFactory();
 
 private:
+	unsigned short getLongestJobDuration();
+
 	unsigned short nMachines;
 	unsigned short nJobs;
 	std::vector<Job> jobs;
