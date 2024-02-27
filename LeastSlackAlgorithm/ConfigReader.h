@@ -27,8 +27,6 @@ public:
 
 	virtual ~ConfigReader();
 
-	void printConfig();
-
 private:
 	void readFirstLine();
 
@@ -39,5 +37,7 @@ private:
 	unsigned short nMachines;
 	std::vector<std::vector<unsigned short>> configValues;
 };
+
+std::ostream& operator<<(std::ostream &os, const ConfigReader &configReader);
 
 #endif /* CONFIGREADER_H_ */

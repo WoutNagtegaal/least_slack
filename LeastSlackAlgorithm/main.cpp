@@ -29,7 +29,7 @@ int main(int argc, char **argv) {
 		if (c.fileFound()) {
 			std::cout << "found" << std::endl;
 			c.readConfig();
-			c.printConfig();
+			std::cout << c;
 			// created a copy constructor in the jobfactories class that accepts ConfigReader objects
 			// this saves having to read all getter functions everytime a jobfactory is made
 			jobFactories.push_back(c);

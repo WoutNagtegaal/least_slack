@@ -77,14 +77,14 @@ unsigned short ConfigReader::getNMachines() const {
 ConfigReader::~ConfigReader() {
 }
 
-// remove this one, should probably be made into the stream operator
-void ConfigReader::printConfig() {
-	std::cout << "Jobs: " << this->nJobs << " Machines: " << this->nMachines
+std::ostream& operator <<(std::ostream &os, const ConfigReader &configReader) {
+	os << "Jobs: " << configReader.getNJobs() << " Machines: " << configReader.getNMachines()
 			<< std::endl;
-	for (std::vector<unsigned short> jobs : this->configValues) {
+	for (std::vector<unsigned short> jobs : configReader.getConfigValues()) {
 		for (unsigned short task : jobs) {
 			std::cout << task << ' ';
 		}
 		std::cout << std::endl;
 	}
+	return os;
 }
