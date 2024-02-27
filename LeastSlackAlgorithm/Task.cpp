@@ -19,11 +19,9 @@ Task::Task(unsigned short taskId, unsigned short machineNr,
 }
 
 Task::Task(const Task &rhs) :
-		taskId(rhs.getTaskId()), machineNr(rhs.getMachineNr()), duration(rhs.getDuration()), earliestStartTime(
-				rhs.getEarliestStartTime()), startTime(rhs.getStartTime()), endTime(rhs.getEndTime()) {
-}
-
-Task::~Task() {
+		taskId(rhs.taskId), machineNr(rhs.machineNr), duration(rhs.duration), earliestStartTime(
+				rhs.earliestStartTime), startTime(rhs.startTime), endTime(
+				rhs.endTime) {
 }
 
 unsigned short Task::getTaskId() const {
@@ -60,6 +58,9 @@ void Task::setStartTime(unsigned short startTime) {
 
 void Task::setEndTime(unsigned short endTime) {
 	this->endTime = endTime;
+}
+
+Task::~Task() {
 }
 
 std::ostream& operator <<(std::ostream &os, const Task &task) {

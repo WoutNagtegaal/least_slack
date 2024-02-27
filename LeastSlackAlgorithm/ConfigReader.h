@@ -17,15 +17,15 @@ public:
 	ConfigReader();
 	ConfigReader(const std::string &filename);
 	ConfigReader(const ConfigReader &rhs);
-	virtual ~ConfigReader();
 
-	bool fileFound();
 	bool readConfig();
+	bool fileFound();
 
 	const std::vector<std::vector<unsigned short>>& getConfigValues() const;
-
 	unsigned short getNJobs() const;
 	unsigned short getNMachines() const;
+
+	virtual ~ConfigReader();
 
 	void printConfig();
 

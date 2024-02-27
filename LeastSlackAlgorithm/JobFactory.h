@@ -22,15 +22,16 @@ public:
 			std::vector<std::vector<unsigned short>> config);
 	JobFactory(const JobFactory &rhs);
 	JobFactory(const ConfigReader &rhs);
-	virtual ~JobFactory();
 
 	void initJobs(std::vector<std::vector<unsigned short>> config);
-	std::vector<Job> getJobs() const;
 
 	void taskTests(); // replace with the proper devided functions!!!!!!!!!
 
 	unsigned short getNMachines() const;
 	unsigned short getNJobs() const;
+	const std::vector<Job> &getJobs() const;
+
+	virtual ~JobFactory();
 
 private:
 	unsigned short nMachines;

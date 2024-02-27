@@ -13,6 +13,8 @@
 JobFactory::JobFactory(unsigned short nMachines, unsigned short nJobs,
 		std::vector<std::vector<unsigned short>> config) :
 		nMachines(nMachines), nJobs(nJobs) {
+	// don't save the config vector directly
+	// we want to save it into the correct classes
 	this->initJobs(config);
 }
 
@@ -20,32 +22,16 @@ JobFactory::JobFactory(const JobFactory &rhs) :
 		nMachines(rhs.nMachines), nJobs(rhs.nJobs), jobs(rhs.jobs) {
 }
 
-JobFactory::~JobFactory() {
-	// TODO Auto-generated destructor stub
-}
-
 JobFactory::JobFactory(const ConfigReader &rhs) {
-	//
+	// made this copy constructor because the ConfigReader holds all required values
+	// to create a JobFactory. this make it easier to create a JobFactory in the main
 	this->nMachines = rhs.getNMachines();
 	this->nJobs = rhs.getNJobs();
 	this->initJobs(rhs.getConfigValues());
 }
 
-std::vector<Job> JobFactory::getJobs() const {
-	return this->jobs;
-}
-
-std::ostream& operator <<(std::ostream &os, const JobFactory &jobFactory) {
-	std::cout << "Jobfactory with " << jobFactory.getNJobs() << " jobs and "
-			<< jobFactory.getNMachines() << " machines" << std::endl;
-
-	for (Job &j : jobFactory.getJobs()) {
-		os << j;
-	}
-	return os;
-}
-
 void JobFactory::initJobs(std::vector<std::vector<unsigned short> > config) {
+	// id is decided by location in the vector, so we have to keep track of it manually
 	unsigned short id = 0;
 	for (auto job : config) {
 		this->jobs.push_back(Job(id, job));
@@ -53,6 +39,8 @@ void JobFactory::initJobs(std::vector<std::vector<unsigned short> > config) {
 	}
 }
 
+// TODO this is a stupid test function
+// replace with seperate functions
 void JobFactory::taskTests() {
 	for (Job &j : this->jobs) {
 		j.calculateEarliestStartTimes();
@@ -75,4 +63,22 @@ unsigned short JobFactory::getNMachines() const {
 
 unsigned short JobFactory::getNJobs() const {
 	return this->nJobs;
+}
+
+const std::vector<Job>& JobFactory::getJobs() const {
+	return this->jobs;
+}
+
+JobFactory::~JobFactory() {
+	// TODO Auto-generated destructor stub
+}
+
+std::ostream& operator <<(std::ostream &os, const JobFactory &jobFactory) {
+	std::cout << "Jobfactory with " << jobFactory.getNJobs() << " jobs and "
+			<< jobFactory.getNMachines() << " machines" << std::endl;
+
+	for (const Job &j : jobFactory.getJobs()) {
+		os << j;
+	}
+	return os;
 }
