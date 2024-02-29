@@ -23,7 +23,7 @@ public:
 	void calculateSlack(unsigned short maxDuration);
 	void sortTasksByTaskId();
 
-	bool jobDone();
+	bool jobDone(unsigned short currentTime);
 
 	unsigned short getDuration() const;
 	unsigned short getJobId() const;

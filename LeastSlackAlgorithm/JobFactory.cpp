@@ -81,12 +81,13 @@ unsigned short JobFactory::getLongestJobDuration() {
 // TODO this is a stupid test function
 // replace with seperate functions
 void JobFactory::taskTests() {
+	std::cout << "fuck" << std::endl;
 	this->calculateSlack();
 	this->sortJobsBySlack();
 	std::cout << "Next tasks:" << std::endl;
 	for (Job &j : jobs) {
-		while(j.startNextTask(currentTime)) {
-			currentTime++;
+		std::cout << "job loop" << std::endl;
+		while(j.startNextTask(300)) {
 		}
 	}
 	std::cout << "End next tasks:" << std::endl;

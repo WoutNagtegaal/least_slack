@@ -24,8 +24,22 @@ Task::Task(const Task &rhs) :
 				rhs.endTime) {
 }
 
-bool Task::taskDone() const {
+bool Task::taskStarted() const {
 	return startTime != endTime;
+}
+
+bool Task::taskBusy(unsigned short currentTime) {
+	if (!this->taskStarted()) {
+		return false;
+	}
+	return currentTime >= startTime && currentTime < endTime;
+}
+
+bool Task::taskDone(unsigned short currentTime) const {
+	if (!this->taskStarted()) {
+		return false;
+	}
+	return currentTime >= endTime;
 }
 
 void Task::startTask(unsigned short startTime) {
@@ -86,4 +100,3 @@ std::ostream& operator <<(std::ostream &os, const Task &task) {
 			<< std::endl;
 	return os;
 }
-

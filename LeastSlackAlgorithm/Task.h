@@ -17,7 +17,9 @@ public:
 			unsigned short duration);
 	Task(const Task &rhs);
 
-	bool taskDone() const;
+	bool taskStarted() const;
+	bool taskBusy(unsigned short currentTime);
+	bool taskDone(unsigned short currentTime) const;
 	void startTask(unsigned short startTime);
 
 	unsigned short getTaskId() const;
