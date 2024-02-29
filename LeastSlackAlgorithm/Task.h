@@ -17,6 +17,9 @@ public:
 			unsigned short duration);
 	Task(const Task &rhs);
 
+	bool taskDone() const;
+	void startTask(unsigned short startTime);
+
 	unsigned short getTaskId() const;
 	unsigned short getDuration() const;
 	unsigned short getMachineNr() const;
@@ -29,6 +32,8 @@ public:
 	void setEarliestStartTime(unsigned short earliestStartTime);
 	void setStartTime(unsigned short startTime);
 	void setEndTime(unsigned short endTime);
+
+	Task& operator=(const Task &rhs);
 
 	virtual ~Task();
 

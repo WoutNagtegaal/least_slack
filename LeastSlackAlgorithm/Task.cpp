@@ -24,6 +24,15 @@ Task::Task(const Task &rhs) :
 				rhs.endTime) {
 }
 
+bool Task::taskDone() const {
+	return startTime != endTime;
+}
+
+void Task::startTask(unsigned short startTime) {
+	this->startTime = startTime;
+	this->endTime = startTime + this->duration;
+}
+
 unsigned short Task::getTaskId() const {
 	return this->taskId;
 }
@@ -58,6 +67,12 @@ void Task::setStartTime(unsigned short startTime) {
 
 void Task::setEndTime(unsigned short endTime) {
 	this->endTime = endTime;
+}
+
+// TODO make a complete copy operator
+Task& Task::operator =(const Task &rhs) {
+	this->taskId = rhs.taskId;
+	return *this;
 }
 
 Task::~Task() {

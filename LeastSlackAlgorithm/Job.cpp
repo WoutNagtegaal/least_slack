@@ -28,11 +28,7 @@ Job::Job(const Job &rhs) :
 void Job::calculateEarliestStartTimes() {
 	// sorting all task by taskId to loop in the right order
 	// otherwise the earliest starttime of the previous task will not have been set
-	auto taskIdSort = [](const Task &a, const Task &b) {
-		return a.getTaskId() < b.getTaskId();
-	};
-	std::sort(this->tasks.begin(), this->tasks.end(), taskIdSort);
-
+	this->sortTasksByTaskId();
 	for (Task &t : tasks) {
 		// first task does not have a previous task so it is set directly
 		if (t.getTaskId() == 0) {
@@ -41,6 +37,24 @@ void Job::calculateEarliestStartTimes() {
 		}
 		t.setEarliestStartTime(calculateEarliestStartTime(t));
 	}
+}
+
+Task& Job::getNextTask() {
+	this->sortTasksByTaskId();
+	auto taskDone = [] (const Task &t) {
+		return !t.taskDone();
+	};
+	auto next = std::find_if(tasks.begin(), tasks.end(), taskDone);
+//	std::cout << *next;
+	return *next;
+
+}
+
+void Job::sortTasksByTaskId() {
+	auto taskIdSort = [](const Task &a, const Task &b) {
+		return a.getTaskId() < b.getTaskId();
+	};
+	std::sort(this->tasks.begin(), this->tasks.end(), taskIdSort);
 }
 
 unsigned short Job::calculateEarliestStartTime(Task &task) {
@@ -103,3 +117,4 @@ std::ostream& operator <<(std::ostream &os, const Job &job) {
 	}
 	return os;
 }
+

@@ -21,10 +21,12 @@ public:
 	void calculateEarliestStartTimes();
 	void calculateDuration();
 	void calculateSlack(unsigned short maxDuration);
+	void sortTasksByTaskId();
 
 	unsigned short getDuration() const;
 	unsigned short getJobId() const;
 	std::vector<Task> getTasks() const;
+	Task& getNextTask();
 
 	void setSlack(unsigned short slack);
 	unsigned short getSlack() const;

@@ -7,6 +7,7 @@
 
 #include "JobFactory.h"
 #include "Job.h"
+#include "Task.h"
 
 #include <algorithm>
 
@@ -57,7 +58,7 @@ void JobFactory::calculateSlack() {
 	unsigned short longestJobDuration = this->getLongestJobDuration();
 	for (Job &j : this->jobs) {
 		j.calculateSlack(longestJobDuration);
-		std::cout << j;
+//		std::cout << j;
 	}
 }
 
@@ -77,12 +78,25 @@ unsigned short JobFactory::getLongestJobDuration() {
 	return longestTask->getDuration();
 }
 
+void doTaskStuff(Job &j) {
+	Task &t = j.getNextTask();
+	std::cout << t;
+	t.startTask(0);
+}
+
 // TODO this is a stupid test function
 // replace with seperate functions
 void JobFactory::taskTests() {
 	this->calculateSlack();
 	this->sortJobsBySlack();
-
+	std::cout << "Next tasks:" << std::endl;
+	for (Job &j : jobs) {
+		doTaskStuff(j);
+		doTaskStuff(j);
+		doTaskStuff(j);
+		doTaskStuff(j);
+	}
+	std::cout << "End next tasks:" << std::endl;
 }
 
 unsigned short JobFactory::getNMachines() const {
