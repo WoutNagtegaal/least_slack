@@ -54,7 +54,7 @@ Task& Job::getNextTask() {
 
 bool Job::startNextTask(unsigned short currentTime) {
 	std::cout << "start next task...." << std::endl;
-	if (this->jobDone(currentTime + 50)) {
+	if (this->jobDone(currentTime)) {
 		return false;
 	}
 	try {
@@ -68,83 +68,82 @@ bool Job::startNextTask(unsigned short currentTime) {
 }
 
 void Job::sortTasksByTaskId() {
-auto taskIdSort = [](const Task &a, const Task &b) {
-	return a.getTaskId() < b.getTaskId();
-};
-std::sort(this->tasks.begin(), this->tasks.end(), taskIdSort);
+	auto taskIdSort = [](const Task &a, const Task &b) {
+		return a.getTaskId() < b.getTaskId();
+	};
+	std::sort(this->tasks.begin(), this->tasks.end(), taskIdSort);
 }
 
 bool Job::jobDone(unsigned short currentTime) {
-std::cout << "here:" << std::endl;
-for (const Task &t : tasks) {
-	if (!t.taskDone(currentTime)) {
-		std::cout << "job is not done:" << std::endl;
-		return false;
-	}
+	for (const Task &t : tasks) {
+		if (!t.taskDone(currentTime)) {
+			std::cout << "job is not done:" << std::endl;
+			return false;
+		}
 //		std::cout << currentTime << std::endl;
-}
-std::cout << "job is done:" << std::endl;
-return true;
+	}
+	std::cout << "job is done:" << std::endl;
+	return true;
 }
 
 unsigned short Job::calculateEarliestStartTime(Task &task) {
 // we want the task before the current task to read the duration and earliest start time
 // these can be added together to get the earliest start time of the current task
-auto getPreviousTask = [task](const Task &a) {
-	return a.getTaskId() == ((task.getTaskId()) - 1);
-};
-auto prev = std::find_if(tasks.begin(), tasks.end(), getPreviousTask);
+	auto getPreviousTask = [task](const Task &a) {
+		return a.getTaskId() == ((task.getTaskId()) - 1);
+	};
+	auto prev = std::find_if(tasks.begin(), tasks.end(), getPreviousTask);
 // TODO validation if a task is found
-return (prev->getEarliestStartTime() + prev->getDuration());
+	return (prev->getEarliestStartTime() + prev->getDuration());
 }
 
 void Job::calculateDuration() {
 // the last task to be executed can be used to calculate the total duration
 // this task is the last, so when this task is done the complete job is done
-auto taskLastId = [](const Task &a, const Task &b) {
-	return a.getTaskId() < b.getTaskId();
-};
-auto lastTask = std::max_element(tasks.begin(), tasks.end(), taskLastId);
-this->duration = lastTask->getDuration() + lastTask->getEarliestStartTime();
+	auto taskLastId = [](const Task &a, const Task &b) {
+		return a.getTaskId() < b.getTaskId();
+	};
+	auto lastTask = std::max_element(tasks.begin(), tasks.end(), taskLastId);
+	this->duration = lastTask->getDuration() + lastTask->getEarliestStartTime();
 }
 
 void Job::calculateSlack(unsigned short maxDuration) {
 // slack is calculated by taking the duration of the longest task an subtracting
 // the duration of this task
-this->slack = maxDuration - this->duration;
+	this->slack = maxDuration - this->duration;
 }
 
 // TODO remove this one, this is calculated within calculate slack
 void Job::setSlack(unsigned short slack) {
-this->slack = slack;
+	this->slack = slack;
 }
 
 unsigned short Job::getSlack() const {
-return this->slack;
+	return this->slack;
 }
 
 unsigned short Job::getJobId() const {
-return this->jobId;
+	return this->jobId;
 }
 
 const std::vector<Task>& Job::getTasks() const {
-return this->tasks;
+	return this->tasks;
 }
 
 unsigned short Job::getDuration() const {
-return this->duration;
+	return this->duration;
 }
 
 Job::~Job() {
 }
 
 std::ostream& operator <<(std::ostream &os, const Job &job) {
-os << "Job nr " << job.getJobId() << " takes " << job.getDuration()
-		<< " sec with " << job.getSlack()
-		<< " sec slack with the following tasks: " << std::endl;
-for (const Task &t : job.getTasks()) {
-	os << t;
-}
-return os;
+	os << "Job nr " << job.getJobId() << " takes " << job.getDuration()
+			<< " sec with " << job.getSlack()
+			<< " sec slack with the following tasks: " << std::endl;
+	for (const Task &t : job.getTasks()) {
+		os << t;
+	}
+	return os;
 }
 
