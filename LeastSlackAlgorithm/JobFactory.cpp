@@ -13,14 +13,14 @@
 
 JobFactory::JobFactory(unsigned short nMachines, unsigned short nJobs,
 		std::vector<std::vector<unsigned short>> config) :
-		nMachines(nMachines), nJobs(nJobs) {
+		nMachines(nMachines), nJobs(nJobs), currentTime(0) {
 	// don't save the config vector directly
 	// we want to save it into the correct classes
 	this->initJobs(config);
 }
 
 JobFactory::JobFactory(const JobFactory &rhs) :
-		nMachines(rhs.nMachines), nJobs(rhs.nJobs), jobs(rhs.jobs) {
+		nMachines(rhs.nMachines), nJobs(rhs.nJobs), currentTime(0), jobs(rhs.jobs) {
 }
 
 JobFactory::JobFactory(const ConfigReader &rhs) {
@@ -78,12 +78,6 @@ unsigned short JobFactory::getLongestJobDuration() {
 	return longestTask->getDuration();
 }
 
-void doTaskStuff(Job &j) {
-	Task &t = j.getNextTask();
-	std::cout << t;
-	t.startTask(0);
-}
-
 // TODO this is a stupid test function
 // replace with seperate functions
 void JobFactory::taskTests() {
@@ -91,10 +85,9 @@ void JobFactory::taskTests() {
 	this->sortJobsBySlack();
 	std::cout << "Next tasks:" << std::endl;
 	for (Job &j : jobs) {
-		doTaskStuff(j);
-		doTaskStuff(j);
-		doTaskStuff(j);
-		doTaskStuff(j);
+		while(j.startNextTask(currentTime)) {
+			currentTime++;
+		}
 	}
 	std::cout << "End next tasks:" << std::endl;
 }

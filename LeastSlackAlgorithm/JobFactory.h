@@ -41,6 +41,7 @@ private:
 
 	unsigned short nMachines;
 	unsigned short nJobs;
+	unsigned short currentTime;
 	std::vector<Job> jobs;
 
 };

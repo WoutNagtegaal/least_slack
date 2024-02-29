@@ -41,7 +41,7 @@ void Job::calculateEarliestStartTimes() {
 
 Task& Job::getNextTask() {
 	this->sortTasksByTaskId();
-	auto taskDone = [] (const Task &t) {
+	auto taskDone = [](const Task &t) {
 		return !t.taskDone();
 	};
 	auto next = std::find_if(tasks.begin(), tasks.end(), taskDone);
@@ -50,11 +50,30 @@ Task& Job::getNextTask() {
 
 }
 
+bool Job::startNextTask(unsigned short startTime) {
+	if (this->jobDone()) {
+		return false;
+	}
+	Task &nextTask = this->getNextTask();
+	nextTask.startTask(startTime);
+	std::cout << nextTask;
+	return true;
+}
+
 void Job::sortTasksByTaskId() {
 	auto taskIdSort = [](const Task &a, const Task &b) {
 		return a.getTaskId() < b.getTaskId();
 	};
 	std::sort(this->tasks.begin(), this->tasks.end(), taskIdSort);
+}
+
+bool Job::jobDone() {
+	for (const Task &t : tasks) {
+		if (!t.taskDone()) {
+			return false;
+		}
+	}
+	return true;
 }
 
 unsigned short Job::calculateEarliestStartTime(Task &task) {
@@ -97,7 +116,7 @@ unsigned short Job::getJobId() const {
 	return this->jobId;
 }
 
-std::vector<Task> Job::getTasks() const {
+const std::vector<Task>& Job::getTasks() const {
 	return this->tasks;
 }
 
@@ -112,7 +131,7 @@ std::ostream& operator <<(std::ostream &os, const Job &job) {
 	os << "Job nr " << job.getJobId() << " takes " << job.getDuration()
 			<< " sec with " << job.getSlack()
 			<< " sec slack with the following tasks: " << std::endl;
-	for (Task &t : job.getTasks()) {
+	for (const Task &t : job.getTasks()) {
 		os << t;
 	}
 	return os;

@@ -23,10 +23,12 @@ public:
 	void calculateSlack(unsigned short maxDuration);
 	void sortTasksByTaskId();
 
+	bool jobDone();
+
 	unsigned short getDuration() const;
 	unsigned short getJobId() const;
-	std::vector<Task> getTasks() const;
-	Task& getNextTask();
+	const std::vector<Task>& getTasks() const;
+	bool startNextTask(unsigned short startTime);
 
 	void setSlack(unsigned short slack);
 	unsigned short getSlack() const;
@@ -34,6 +36,9 @@ public:
 	virtual ~Job();
 
 private:
+	// can't be const, the next task will be started (starttime set)
+	// because of this i made it private, so it will at least not be altered from outside
+	Task& getNextTask();
 	unsigned short calculateEarliestStartTime(Task &task);
 
 	unsigned short jobId;
