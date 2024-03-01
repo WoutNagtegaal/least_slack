@@ -9,7 +9,6 @@
 #define JOB_H_
 
 #include <vector>
-
 #include "Task.h"
 
 class Job {
@@ -38,7 +37,7 @@ public:
 private:
 	// can't be const, the next task will be started (starttime set)
 	// because of this i made it private, so it will at least not be altered from outside
-	Task& getNextTask();
+	Task* getNextTask();
 	unsigned short calculateEarliestStartTime(Task &task);
 
 	unsigned short jobId;

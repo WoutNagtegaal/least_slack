@@ -39,7 +39,7 @@ void Job::calculateEarliestStartTimes() {
 	}
 }
 
-Task& Job::getNextTask() {
+Task* Job::getNextTask() {
 	this->sortTasksByTaskId();
 	auto taskDone = [](const Task &t) {
 		return !t.taskStarted();
@@ -47,9 +47,9 @@ Task& Job::getNextTask() {
 	auto next = std::find_if(tasks.begin(), tasks.end(), taskDone);
 //	std::cout << *next;
 	if (next != tasks.end()) {
-		return *next;
+		return &(*next);
 	}
-	throw std::out_of_range("No tasks available");
+	return nullptr;
 }
 
 bool Job::startNextTask(unsigned short currentTime) {
@@ -57,14 +57,13 @@ bool Job::startNextTask(unsigned short currentTime) {
 	if (this->jobDone(currentTime)) {
 		return false;
 	}
-	try {
-		Task &nextTask = this->getNextTask();
-		nextTask.startTask(currentTime);
-		std::cout << nextTask;
-		return true;
-	} catch (const std::out_of_range &e) {
+	Task *nextTask = this->getNextTask();
+	if (!nextTask) {
 		return false;
 	}
+	nextTask->startTask(currentTime);
+	std::cout << *nextTask;
+	return true;
 }
 
 void Job::sortTasksByTaskId() {

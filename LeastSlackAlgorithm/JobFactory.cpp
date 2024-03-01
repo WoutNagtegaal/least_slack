@@ -85,7 +85,10 @@ void JobFactory::taskTests() {
 	this->sortJobsBySlack();
 	std::cout << "Next tasks:" << std::endl;
 	for (Job &j : jobs) {
+		int i = 0;
 		while(j.startNextTask(300)) {
+			i++;
+			if(i > 10) break;
 		}
 	}
 	std::cout << "End next tasks:" << std::endl;
