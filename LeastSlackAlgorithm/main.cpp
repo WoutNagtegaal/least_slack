@@ -9,7 +9,7 @@
 #include "JobFactory.h"
 
 int main(int argc, char **argv) {
-	std::cout << "Starting program.........." << std::endl;
+	std::cout << "Starting program" << std::endl;
 	// check if there were any arguments filled in from the command line
 	if (argc < 2) {
 		std::cerr << "Please enter a filename as the first argument"

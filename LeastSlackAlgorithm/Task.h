@@ -35,8 +35,6 @@ public:
 	void setStartTime(unsigned short startTime);
 	void setEndTime(unsigned short endTime);
 
-	Task& operator=(const Task &rhs);
-
 	virtual ~Task();
 
 private:

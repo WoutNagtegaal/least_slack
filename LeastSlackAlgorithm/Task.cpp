@@ -83,12 +83,6 @@ void Task::setEndTime(unsigned short endTime) {
 	this->endTime = endTime;
 }
 
-// TODO make a complete copy operator
-Task& Task::operator =(const Task &rhs) {
-	this->taskId = rhs.taskId;
-	return *this;
-}
-
 Task::~Task() {
 }
 
