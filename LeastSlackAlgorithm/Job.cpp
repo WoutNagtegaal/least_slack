@@ -53,6 +53,9 @@ Task* Job::getNextTask() {
 }
 
 bool Job::startNextTask(unsigned short currentTime) {
+	if (!this->taskAvailable()) {
+		return false;
+	}
 	std::cout << "start next task...." << std::endl;
 	if (this->jobDone(currentTime)) {
 		return false;
@@ -76,13 +79,43 @@ void Job::sortTasksByTaskId() {
 bool Job::jobDone(unsigned short currentTime) {
 	for (const Task &t : tasks) {
 		if (!t.taskDone(currentTime)) {
-			std::cout << "job is not done:" << std::endl;
+//			std::cout << "job is not done:" << std::endl;
 			return false;
 		}
 //		std::cout << currentTime << std::endl;
 	}
-	std::cout << "job is done:" << std::endl;
+//	std::cout << "job is done:" << std::endl;
 	return true;
+}
+
+bool Job::taskAvailable() {
+	for (const Task &t : tasks) {
+		if (!t.taskStarted()) {
+			return true;
+		}
+	}
+	return false;
+}
+
+bool Job::usesMachine(unsigned short machineNr,
+		unsigned short currentTime) const {
+	for (const Task &t : tasks) {
+		if (t.taskBusy(currentTime)) {
+			if (t.getMachineNr() == machineNr) {
+				return true;
+			}
+		}
+	}
+	return false;
+}
+
+bool Job::jobBusy(unsigned short currentTime) {
+	for (const Task &t : tasks) {
+		if (t.taskBusy(currentTime)) {
+			return true;
+		}
+	}
+	return false;
 }
 
 unsigned short Job::calculateEarliestStartTime(Task &task) {
@@ -145,4 +178,3 @@ std::ostream& operator <<(std::ostream &os, const Job &job) {
 	}
 	return os;
 }
-

@@ -23,6 +23,11 @@ public:
 	void sortTasksByTaskId();
 
 	bool jobDone(unsigned short currentTime);
+	bool jobBusy(unsigned short currentTime);
+	bool taskAvailable();
+
+	bool usesMachine(unsigned short machineNr,
+			unsigned short currentTime) const;
 
 	unsigned short getDuration() const;
 	unsigned short getJobId() const;

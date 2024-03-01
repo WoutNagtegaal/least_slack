@@ -32,7 +32,10 @@ public:
 
 	unsigned short getNMachines() const;
 	unsigned short getNJobs() const;
-	const std::vector<Job> &getJobs() const;
+	const std::vector<Job>& getJobs() const;
+
+	bool machineInUse(unsigned short machineNr,
+			unsigned short currentTime) const;
 
 	virtual ~JobFactory();
 

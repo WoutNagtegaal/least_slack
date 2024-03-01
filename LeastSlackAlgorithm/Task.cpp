@@ -28,7 +28,7 @@ bool Task::taskStarted() const {
 	return startTime != endTime;
 }
 
-bool Task::taskBusy(unsigned short currentTime) {
+bool Task::taskBusy(unsigned short currentTime) const {
 	if (!this->taskStarted()) {
 		return false;
 	}
@@ -96,7 +96,8 @@ std::ostream& operator <<(std::ostream &os, const Task &task) {
 	os << "Task nr " << task.getTaskId();
 	os << " on machine nr " << task.getMachineNr();
 	os << " takes " << task.getDuration() << " sec";
-	os << " begins at earliest on t=" << task.getEarliestStartTime() << "sec"
-			<< std::endl;
+	os << " begins at earliest on t=" << task.getEarliestStartTime() << "sec";
+	os << " starts at " << task.getStartTime() << " sec and ends at "
+			<< task.getEndTime() << " sec" << std::endl;
 	return os;
 }

@@ -20,7 +20,8 @@ JobFactory::JobFactory(unsigned short nMachines, unsigned short nJobs,
 }
 
 JobFactory::JobFactory(const JobFactory &rhs) :
-		nMachines(rhs.nMachines), nJobs(rhs.nJobs), currentTime(0), jobs(rhs.jobs) {
+		nMachines(rhs.nMachines), nJobs(rhs.nJobs), currentTime(0), jobs(
+				rhs.jobs) {
 }
 
 JobFactory::JobFactory(const ConfigReader &rhs) {
@@ -70,6 +71,16 @@ void JobFactory::sortJobsBySlack() {
 	std::sort(jobs.begin(), jobs.end(), jobSlackSort);
 }
 
+bool JobFactory::machineInUse(unsigned short machineNr,
+		unsigned short currentTime) const {
+	for (const Job &j : jobs) {
+		if (j.usesMachine(machineNr, currentTime)) {
+			return true;
+		}
+	}
+	return false;
+}
+
 unsigned short JobFactory::getLongestJobDuration() {
 	auto maxDuration = [](const Job &a, const Job &b) {
 		return a.getDuration() < b.getDuration();
@@ -81,17 +92,34 @@ unsigned short JobFactory::getLongestJobDuration() {
 // TODO this is a stupid test function
 // replace with seperate functions
 void JobFactory::taskTests() {
-	this->calculateSlack();
-	this->sortJobsBySlack();
-	std::cout << "Next tasks:" << std::endl;
-	for (Job &j : jobs) {
-		int i = 0;
-		while(j.startNextTask(300)) {
-			i++;
-			if(i > 10) break;
+//	this->calculateSlack();
+//	this->sortJobsBySlack();
+//	std::cout << "Next tasks:" << std::endl;
+//	for (Job &j : jobs) {
+//		int i = 0;
+//		while (j.startNextTask(300)) {
+//			i++;
+//			if (i > 10)
+//				break;
+//		}
+//	}
+//	std::cout << "End next tasks:" << std::endl;
+	while (1) {
+		this->calculateSlack();
+		this->sortJobsBySlack();
+
+		for (Job &j : jobs) {
+			if(j.jobDone(currentTime) || j.jobBusy(currentTime)) {
+				continue;
+			}
+			j.startNextTask(currentTime);
+		}
+
+		++currentTime;
+		if (currentTime > 500) {
+			break;
 		}
 	}
-	std::cout << "End next tasks:" << std::endl;
 }
 
 unsigned short JobFactory::getNMachines() const {
