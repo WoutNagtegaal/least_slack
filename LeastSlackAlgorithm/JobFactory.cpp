@@ -52,7 +52,7 @@ void JobFactory::sortJobsByJobId() {
 void JobFactory::calculateSlack() {
 	// preparation for the slack calculation
 	for (Job &j : this->jobs) {
-		j.calculateEarliestStartTimes();
+		j.calculateEarliestStartTimes(currentTime);
 		j.calculateDuration();
 	}
 	// making seperate variable so it isn't calcuted for every job
@@ -92,39 +92,27 @@ unsigned short JobFactory::getLongestJobDuration() {
 // TODO this is a stupid test function
 // replace with seperate functions
 void JobFactory::taskTests() {
-//	this->calculateSlack();
-//	this->sortJobsBySlack();
-//	for (const Job &j : jobs) {
-//		std::cout << j;
-//	}
-//	std::cout << "Next tasks:" << std::endl;
-//	for (Job &j : jobs) {
-//		int i = 0;
-//		while (j.startNextTask(300)) {
-//			i++;
-//			if (i > 10)
-//				break;
-//		}
-//	}
-//	std::cout << "End next tasks:" << std::endl;
 	while (1) {
 		this->calculateSlack();
 		this->sortJobsBySlack();
 
 		for (Job &j : jobs) {
-//			std::cout << j;
 			if (j.jobDone(currentTime) || j.jobBusy(currentTime)) {
 				continue;
 			}
 			if (!this->machineInUse(j.getNextMachine(), currentTime)) {
+				std::cout << "------------" << std::endl;
+//				for(Job &job:jobs) {
+//					std::cout << job;
+//				}
 				j.startNextTask(currentTime);
 			} else {
-				std::cout << "Machine already in use" << std::endl;
+//				std::cout << "Machine already in use" << std::endl;
 			}
 		}
 
 		++currentTime;
-		if (currentTime > 500) {
+		if (currentTime > 2000) {
 			break;
 		}
 	}

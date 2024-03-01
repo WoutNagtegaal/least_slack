@@ -17,7 +17,7 @@ public:
 	Job(unsigned short jobId, std::vector<unsigned short> config);
 	Job(const Job &rhs);
 
-	void calculateEarliestStartTimes();
+	void calculateEarliestStartTimes(unsigned short currentTime);
 	void calculateDuration();
 	void calculateSlack(unsigned short maxDuration);
 	void sortTasksByTaskId();

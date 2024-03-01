@@ -26,17 +26,25 @@ Job::Job(const Job &rhs) :
 				rhs.slack) {
 }
 
-void Job::calculateEarliestStartTimes() {
+void Job::calculateEarliestStartTimes(unsigned short currentTime) {
 	// sorting all task by taskId to loop in the right order
 	// otherwise the earliest starttime of the previous task will not have been set
+	if (!this->taskAvailable())
+		return;
 	this->sortTasksByTaskId();
-	for (Task &t : tasks) {
+	auto taskDone = [](const Task &t) {
+		return !t.taskStarted();
+	};
+	auto next = std::find_if(tasks.begin(), tasks.end(), taskDone);
+	if (next == tasks.end())
+		return;
+	for (auto t = next; t != tasks.end(); t++) {
 		// first task does not have a previous task so it is set directly
-		if (t.getTaskId() == 0) {
-			t.setEarliestStartTime(0); // TODO make this set the current time
+		if (t->getTaskId() == 0) {
+			t->setEarliestStartTime(currentTime); // TODO make this set the current time
 			continue;
 		}
-		t.setEarliestStartTime(calculateEarliestStartTime(t));
+		t->setEarliestStartTime(calculateEarliestStartTime(*t));
 	}
 }
 
