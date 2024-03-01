@@ -17,37 +17,34 @@ int main(int argc, char **argv) {
 		return 1;
 	}
 
-	// this was made with the thought to make it possible to load multiple files, should edit it to only
-	// create one config from the file in the arguments
-	std::vector<ConfigReader> configs;
+	ConfigReader config(argv[1]);
 	std::cout << argv[1] << std::endl;
-	configs.push_back(ConfigReader(argv[1]));
 
-	// same for this one
-	std::vector<JobFactory> jobFactories;
-	for (ConfigReader c : configs) {
-		// c will try to open the file, if it was found we can use it to read the config to the job factory
-		if (c.fileFound()) {
-			std::cout << "found" << std::endl;
-			c.readConfig();
-			std::cout << c;
-			// created a copy constructor in the jobfactories class that accepts ConfigReader objects
-			// this saves having to read all getter functions everytime a jobfactory is made
-			jobFactories.push_back(c);
-		} else {
-			std::cout << "not found" << std::endl;
-		}
+	if (!config.fileFound()) {
+		std::cout << "not found" << std::endl;
+		return 1;
 	}
 
-	for (JobFactory j : jobFactories) {
-		// tasktests does temporary tests, this has to be replaced with the actual final logic
-		j.taskTests();
-		j.sortJobsByJobId();
-		std::cout
-				<< "------------------------------end results------------------------------"
-				<< std::endl;
-		std::cout << j;
-	}
+	std::cout << "found" << std::endl;
+	config.readConfig();
+	std::cout << config;
+	std::cout
+			<< "------------------------------initial------------------------------"
+			<< std::endl;
+	// created a copy constructor in the jobfactories class that accepts ConfigReader objects
+	// this saves having to read all getter functions everytime a jobfactory is made
+	JobFactory jobFactory(config);
+
+	std::cout << jobFactory;
+	std::cout
+			<< "------------------------------after sort------------------------------"
+			<< std::endl;
+	jobFactory.taskTests();
+	jobFactory.sortJobsByJobId();
+	std::cout
+			<< "------------------------------end results------------------------------"
+			<< std::endl;
+	std::cout << jobFactory;
 
 	return 0;
 }
