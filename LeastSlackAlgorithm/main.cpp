@@ -38,9 +38,14 @@ int main(int argc, char **argv) {
 			std::cout << "not found" << std::endl;
 		}
 	}
+
 	for (JobFactory j : jobFactories) {
 		// tasktests does temporary tests, this has to be replaced with the actual final logic
 		j.taskTests();
+		j.sortJobsByJobId();
+		std::cout
+				<< "------------------------------end results------------------------------"
+				<< std::endl;
 		std::cout << j;
 	}
 

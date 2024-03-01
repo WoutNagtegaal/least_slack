@@ -109,14 +109,19 @@ void JobFactory::taskTests() {
 		this->sortJobsBySlack();
 
 		for (Job &j : jobs) {
-			if(j.jobDone(currentTime) || j.jobBusy(currentTime)) {
+			std::cout << j;
+			if (j.jobDone(currentTime) || j.jobBusy(currentTime)) {
 				continue;
 			}
-			j.startNextTask(currentTime);
+			if (!this->machineInUse(j.getNextMachine(), currentTime)) {
+				j.startNextTask(currentTime);
+			} else {
+				std::cout << "Machine already in use" << std::endl;
+			}
 		}
 
 		++currentTime;
-		if (currentTime > 500) {
+		if (currentTime > 10) {
 			break;
 		}
 	}

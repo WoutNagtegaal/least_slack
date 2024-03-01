@@ -8,6 +8,7 @@
 #include "Job.h"
 
 #include <algorithm>
+#include <limits>
 
 Job::Job() :
 		jobId(0), duration(0), slack(0) {
@@ -116,6 +117,17 @@ bool Job::jobBusy(unsigned short currentTime) {
 		}
 	}
 	return false;
+}
+
+unsigned short Job::getNextMachine() {
+	if (!this->taskAvailable()) {
+		return std::numeric_limits<unsigned short>::max();
+	}
+	Task *nextTask = this->getNextTask();
+	if (!nextTask) {
+		return std::numeric_limits<unsigned short>::max();
+	}
+	return nextTask->getMachineNr();
 }
 
 unsigned short Job::calculateEarliestStartTime(Task &task) {
