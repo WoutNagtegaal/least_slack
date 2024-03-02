@@ -28,6 +28,8 @@ public:
 	void sortJobsByJobId();
 	void sortJobsBySlack();
 
+	void printEndResults();
+
 	void taskTests(); // replace with the proper devided functions!!!!!!!!!
 
 	unsigned short getNMachines() const;

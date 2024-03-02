@@ -138,6 +138,11 @@ unsigned short Job::getNextMachine() {
 	return nextTask->getMachineNr();
 }
 
+void Job::printEndResult() {
+	std::cout << tasks[0].getStartTime() << " "
+			<< tasks[tasks.size() - 1].getEndTime() << std::endl;
+}
+
 unsigned short Job::calculateEarliestStartTime(Task &task) {
 // we want the task before the current task to read the duration and earliest start time
 // these can be added together to get the earliest start time of the current task

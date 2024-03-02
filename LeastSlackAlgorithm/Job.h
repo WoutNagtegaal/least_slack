@@ -21,6 +21,7 @@ public:
 	void calculateDuration();
 	void calculateSlack(unsigned short maxDuration);
 	void sortTasksByTaskId();
+	void printEndResult();
 
 	bool jobDone(unsigned short currentTime);
 	bool jobBusy(unsigned short currentTime);

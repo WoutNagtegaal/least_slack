@@ -81,6 +81,13 @@ bool JobFactory::machineInUse(unsigned short machineNr,
 	return false;
 }
 
+void JobFactory::printEndResults() {
+	for(Job &j:jobs) {
+		std::cout << j.getJobId() << " ";
+		j.printEndResult();
+	}
+}
+
 unsigned short JobFactory::getLongestJobDuration() {
 	auto maxDuration = [](const Job &a, const Job &b) {
 		return a.getDuration() < b.getDuration();
