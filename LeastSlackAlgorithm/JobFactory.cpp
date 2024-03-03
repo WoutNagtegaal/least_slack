@@ -102,10 +102,12 @@ void JobFactory::schedule() {
 		machines.push_back(Machine());
 	}
 	while (1) {
-		for (auto j = jobs.begin(); j < jobs.end(); j++) {
+		for (auto j = jobs.begin(); j < jobs.end();) {
 			if (j->jobDone(currentTime)) {
 				finishedJobs.push_back(*j);
-				jobs.erase(j);
+				j = jobs.erase(j);
+			} else {
+				++j;
 			}
 		}
 
