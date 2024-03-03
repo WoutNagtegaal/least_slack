@@ -10,10 +10,6 @@
 #include <algorithm>
 #include <limits>
 
-Job::Job() :
-		jobId(0), duration(0), slack(0) {
-}
-
 Job::Job(unsigned short jobId, std::vector<unsigned short> config) :
 		jobId(jobId), duration(0), slack(0) {
 	for (unsigned short i = 0; i < config.size(); i += 2) {
@@ -28,15 +24,10 @@ Job::Job(const Job &rhs) :
 
 Task* Job::getNextTask() {
 	this->sortTasksByTaskId();
-	auto taskDone = [](const Task &t) {
-		return !t.taskStarted();
-	};
-	auto next = std::find_if(tasks.begin(), tasks.end(), taskDone);
-//	std::cout << *next;
-	if (next != tasks.end()) {
-		return &(*next);
+	if (tasks.size() == 0) {
+		return nullptr;
 	}
-	return nullptr;
+	return &tasks[0];
 }
 
 bool Job::startNextTask(unsigned short currentTime) {
@@ -47,11 +38,11 @@ bool Job::startNextTask(unsigned short currentTime) {
 	if (this->jobDone(currentTime)) {
 		return false;
 	}
-	Task *nextTask = this->getNextTask();
-	if (!nextTask) {
-		return false;
-	}
-	nextTask->startTask(currentTime);
+	currentTask = tasks[0];
+	currentTask.startTask(currentTime);
+	startedTasks.push_back(currentTask);
+	tasks.erase(tasks.begin());
+
 //	std::cout << *nextTask;
 	return true;
 }

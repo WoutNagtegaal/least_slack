@@ -13,7 +13,6 @@
 
 class Job {
 public:
-	Job();
 	Job(unsigned short jobId, std::vector<unsigned short> config);
 	Job(const Job &rhs);
 
@@ -48,7 +47,8 @@ private:
 
 	unsigned short jobId;
 	std::vector<Task> tasks;
-	std::vector<Task> finishedTasks;
+	std::vector<Task> startedTasks;
+	Task currentTask;
 	unsigned short duration;
 	unsigned short slack;
 };
