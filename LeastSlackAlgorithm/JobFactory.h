@@ -29,9 +29,11 @@ public:
 	void sortJobsByJobId();
 	void sortJobsBySlack();
 
+	bool allJobsDone();
+
 	void printEndResults();
 
-	void taskTests(); // replace with the proper devided functions!!!!!!!!!
+	void schedule();
 
 	unsigned short getNMachines() const;
 	unsigned short getNJobs() const;

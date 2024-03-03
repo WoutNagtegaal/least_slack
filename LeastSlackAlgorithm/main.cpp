@@ -39,7 +39,7 @@ int main(int argc, char **argv) {
 //	std::cout
 //			<< "------------------------------after sort------------------------------"
 //			<< std::endl;
-	jobFactory.taskTests();
+	jobFactory.schedule();
 	jobFactory.sortJobsByJobId();
 //	std::cout
 //			<< "------------------------------end results------------------------------"

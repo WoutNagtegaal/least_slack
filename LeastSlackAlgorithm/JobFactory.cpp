@@ -41,6 +41,14 @@ void JobFactory::initJobs(std::vector<std::vector<unsigned short> > config) {
 	}
 }
 
+bool JobFactory::allJobsDone() {
+	for(Job&j:jobs) {
+		if(!j.jobDone(currentTime)) return false;
+	}
+	return true;
+}
+
+
 void JobFactory::sortJobsByJobId() {
 	// sorts jobs by ID for easier visualisation
 	auto jobIdSort = [](const Job &a, const Job &b) {
@@ -88,7 +96,7 @@ unsigned short JobFactory::getLongestJobDuration() {
 
 // TODO this is a stupid test function
 // replace with seperate functions
-void JobFactory::taskTests() {
+void JobFactory::schedule() {
 	std::vector<Machine> machines;
 	for(int i= 0; i < nMachines; i++) {
 		machines.push_back(Machine());
@@ -118,7 +126,7 @@ void JobFactory::taskTests() {
 		}
 
 		++currentTime;
-		if (currentTime > 5000) {
+		if (allJobsDone()) {
 			break;
 		}
 	}
