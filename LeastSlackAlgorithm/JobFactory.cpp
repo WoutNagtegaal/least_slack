@@ -42,12 +42,8 @@ void JobFactory::initJobs(std::vector<std::vector<unsigned short> > config) {
 }
 
 bool JobFactory::allJobsDone() {
-	for(Job&j:jobs) {
-		if(!j.jobDone(currentTime)) return false;
-	}
-	return true;
+	return jobs.size() == 0;
 }
-
 
 void JobFactory::sortJobsByJobId() {
 	// sorts jobs by ID for easier visualisation
@@ -80,7 +76,11 @@ void JobFactory::sortJobsBySlack() {
 }
 
 void JobFactory::printEndResults() {
-	for (Job &j : jobs) {
+	auto sort = [](const Job &a, const Job &b) {
+		return a.getJobId() < b.getJobId();
+	};
+	std::sort(finishedJobs.begin(), finishedJobs.end(), sort);
+	for (Job &j : finishedJobs) {
 		std::cout << j.getJobId() << " ";
 		j.printEndResult();
 	}
@@ -98,10 +98,17 @@ unsigned short JobFactory::getLongestJobDuration() {
 // replace with seperate functions
 void JobFactory::schedule() {
 	std::vector<Machine> machines;
-	for(int i= 0; i < nMachines; i++) {
+	for (int i = 0; i < nMachines; i++) {
 		machines.push_back(Machine());
 	}
 	while (1) {
+		for (auto j = jobs.begin(); j < jobs.end(); j++) {
+			if (j->jobDone(currentTime)) {
+				finishedJobs.push_back(*j);
+				jobs.erase(j);
+			}
+		}
+
 		this->calculateSlack();
 		this->sortJobsBySlack();
 
@@ -113,15 +120,8 @@ void JobFactory::schedule() {
 			unsigned short duration = current->getDuration();
 			unsigned short machineNr = current->getMachineNr();
 			if (!machines[machineNr].machineBusy(currentTime)) {
-//				std::cout << "------------" << std::endl;
-//				for(Job &job:jobs) {
-//					std::cout << job;
-//				}
-
 				j.startNextTask(currentTime);
 				machines[machineNr].startMachine(currentTime, duration);
-			} else {
-//				std::cout << "Machine already in use" << std::endl;
 			}
 		}
 
