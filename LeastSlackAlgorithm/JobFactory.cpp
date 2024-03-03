@@ -82,7 +82,7 @@ bool JobFactory::machineInUse(unsigned short machineNr,
 }
 
 void JobFactory::printEndResults() {
-	for(Job &j:jobs) {
+	for (Job &j : jobs) {
 		std::cout << j.getJobId() << " ";
 		j.printEndResult();
 	}
@@ -99,6 +99,10 @@ unsigned short JobFactory::getLongestJobDuration() {
 // TODO this is a stupid test function
 // replace with seperate functions
 void JobFactory::taskTests() {
+	std::vector<Machine> machines;
+	for(int i= 0; i < nMachines; i++) {
+		machines.push_back(Machine());
+	}
 	while (1) {
 		this->calculateSlack();
 		this->sortJobsBySlack();
@@ -107,12 +111,17 @@ void JobFactory::taskTests() {
 			if (j.jobDone(currentTime) || j.jobBusy(currentTime)) {
 				continue;
 			}
-			if (!this->machineInUse(j.getNextMachine(), currentTime)) {
+			Task *current = j.getNextTask();
+			unsigned short duration = current->getDuration();
+			unsigned short machineNr = current->getMachineNr();
+			if (!machines[machineNr].machineBusy(currentTime)) {
 //				std::cout << "------------" << std::endl;
 //				for(Job &job:jobs) {
 //					std::cout << job;
 //				}
+
 				j.startNextTask(currentTime);
+				machines[machineNr].startMachine(currentTime, duration);
 			} else {
 //				std::cout << "Machine already in use" << std::endl;
 			}

@@ -12,6 +12,7 @@
 
 #include "Job.h"
 #include "ConfigReader.h"
+#include "Machine.h"
 
 typedef std::vector<unsigned short> growyBoy;
 

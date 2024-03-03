@@ -47,7 +47,7 @@ int main(int argc, char **argv) {
 //	std::cout << jobFactory;
 
 	jobFactory.printEndResults();
-	std::cout << jobFactory;
+//	std::cout << jobFactory;
 
 	return 0;
 }
