@@ -43,7 +43,7 @@ bool Job::startNextTask(unsigned short currentTime) {
 	if (!this->taskAvailable()) {
 		return false;
 	}
-	std::cout << "start next task...." << std::endl;
+//	std::cout << "start next task...." << std::endl;
 	if (this->jobDone(currentTime)) {
 		return false;
 	}
@@ -52,7 +52,7 @@ bool Job::startNextTask(unsigned short currentTime) {
 		return false;
 	}
 	nextTask->startTask(currentTime);
-	std::cout << *nextTask;
+//	std::cout << *nextTask;
 	return true;
 }
 
@@ -168,11 +168,6 @@ void Job::calculateSlack(unsigned short maxDuration) {
 // slack is calculated by taking the duration of the longest task an subtracting
 // the duration of this task
 	this->slack = maxDuration - this->duration;
-}
-
-// TODO remove this one, this is calculated within calculate slack
-void Job::setSlack(unsigned short slack) {
-	this->slack = slack;
 }
 
 unsigned short Job::getSlack() const {

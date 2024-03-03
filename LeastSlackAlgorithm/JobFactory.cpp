@@ -108,7 +108,7 @@ void JobFactory::taskTests() {
 				continue;
 			}
 			if (!this->machineInUse(j.getNextMachine(), currentTime)) {
-				std::cout << "------------" << std::endl;
+//				std::cout << "------------" << std::endl;
 //				for(Job &job:jobs) {
 //					std::cout << job;
 //				}
@@ -119,7 +119,7 @@ void JobFactory::taskTests() {
 		}
 
 		++currentTime;
-		if (currentTime > 2000) {
+		if (currentTime > 5000) {
 			break;
 		}
 	}

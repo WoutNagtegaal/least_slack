@@ -36,7 +36,6 @@ public:
 	bool startNextTask(unsigned short startTime);
 	unsigned short getNextMachine();
 
-	void setSlack(unsigned short slack);
 	unsigned short getSlack() const;
 
 	virtual ~Job();

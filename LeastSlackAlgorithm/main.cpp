@@ -28,25 +28,26 @@ int main(int argc, char **argv) {
 	std::cout << "found" << std::endl;
 	config.readConfig();
 	std::cout << config;
-	std::cout
-			<< "------------------------------initial------------------------------"
-			<< std::endl;
+//	std::cout
+//			<< "------------------------------initial------------------------------"
+//			<< std::endl;
 	// created a copy constructor in the jobfactories class that accepts ConfigReader objects
 	// this saves having to read all getter functions everytime a jobfactory is made
 	JobFactory jobFactory(config);
 
-	std::cout << jobFactory;
-	std::cout
-			<< "------------------------------after sort------------------------------"
-			<< std::endl;
+//	std::cout << jobFactory;
+//	std::cout
+//			<< "------------------------------after sort------------------------------"
+//			<< std::endl;
 	jobFactory.taskTests();
 	jobFactory.sortJobsByJobId();
-	std::cout
-			<< "------------------------------end results------------------------------"
-			<< std::endl;
-	std::cout << jobFactory;
+//	std::cout
+//			<< "------------------------------end results------------------------------"
+//			<< std::endl;
+//	std::cout << jobFactory;
 
 	jobFactory.printEndResults();
+	std::cout << jobFactory;
 
 	return 0;
 }
