@@ -27,9 +27,6 @@ public:
 	bool jobBusy(unsigned short currentTime);
 	bool taskAvailable();
 
-	bool usesMachine(unsigned short machineNr,
-			unsigned short currentTime) const;
-
 	unsigned short getDuration() const;
 	unsigned short getJobId() const;
 	const std::vector<Task>& getTasks() const;

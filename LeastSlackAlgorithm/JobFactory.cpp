@@ -71,16 +71,6 @@ void JobFactory::sortJobsBySlack() {
 	std::sort(jobs.begin(), jobs.end(), jobSlackSort);
 }
 
-bool JobFactory::machineInUse(unsigned short machineNr,
-		unsigned short currentTime) const {
-	for (const Job &j : jobs) {
-		if (j.usesMachine(machineNr, currentTime)) {
-			return true;
-		}
-	}
-	return false;
-}
-
 void JobFactory::printEndResults() {
 	for (Job &j : jobs) {
 		std::cout << j.getJobId() << " ";

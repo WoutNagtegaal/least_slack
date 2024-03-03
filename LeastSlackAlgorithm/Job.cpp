@@ -84,18 +84,6 @@ bool Job::taskAvailable() {
 	return false;
 }
 
-bool Job::usesMachine(unsigned short machineNr,
-		unsigned short currentTime) const {
-	for (const Task &t : tasks) {
-		if (t.taskBusy(currentTime)) {
-			if (t.getMachineNr() == machineNr) {
-				return true;
-			}
-		}
-	}
-	return false;
-}
-
 bool Job::jobBusy(unsigned short currentTime) {
 	for (const Task &t : tasks) {
 		if (t.taskBusy(currentTime)) {
