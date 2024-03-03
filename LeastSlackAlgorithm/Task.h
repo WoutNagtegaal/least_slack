@@ -30,6 +30,7 @@ public:
 	unsigned short getEndTime() const;
 
 	// bool operator==(const Task &rhs);
+	Task& operator=(const Task &rhs);
 
 	void setEarliestStartTime(unsigned short earliestStartTime);
 	void setStartTime(unsigned short startTime);

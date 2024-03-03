@@ -48,6 +48,7 @@ private:
 
 	unsigned short jobId;
 	std::vector<Task> tasks;
+	std::vector<Task> finishedTasks;
 	unsigned short duration;
 	unsigned short slack;
 };

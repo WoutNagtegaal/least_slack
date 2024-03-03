@@ -83,6 +83,18 @@ void Task::setEndTime(unsigned short endTime) {
 	this->endTime = endTime;
 }
 
+Task& Task::operator=(const Task &rhs) {
+	if (this != &rhs) {
+		taskId = rhs.taskId;
+		machineNr = rhs.machineNr;
+		duration = rhs.duration;
+		earliestStartTime = rhs.earliestStartTime;
+		startTime = rhs.startTime;
+		endTime = rhs.endTime;
+	}
+	return *this;
+}
+
 Task::~Task() {
 }
 
