@@ -93,17 +93,6 @@ bool Job::jobBusy(unsigned short currentTime) {
 	return false;
 }
 
-unsigned short Job::getNextMachine() {
-	if (!this->taskAvailable()) {
-		return std::numeric_limits<unsigned short>::max();
-	}
-	Task *nextTask = this->getNextTask();
-	if (!nextTask) {
-		return std::numeric_limits<unsigned short>::max();
-	}
-	return nextTask->getMachineNr();
-}
-
 void Job::printEndResult() {
 	std::cout << tasks[0].getStartTime() << " "
 			<< tasks[tasks.size() - 1].getEndTime() << std::endl;
@@ -129,6 +118,9 @@ void Job::calculateEarliestStartTimes(unsigned short currentTime) {
 		}
 		t->setEarliestStartTime(calculateEarliestStartTime(*t));
 	}
+}
+
+void Job::update() {
 }
 
 unsigned short Job::calculateEarliestStartTime(Task &task) {

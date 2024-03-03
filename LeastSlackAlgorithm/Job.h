@@ -31,13 +31,14 @@ public:
 	unsigned short getJobId() const;
 	const std::vector<Task>& getTasks() const;
 	bool startNextTask(unsigned short startTime);
-	unsigned short getNextMachine();
 
 	// can't be const, the next task will be started (starttime set)
 	// because of this i made it private, so it will at least not be altered from outside
 	Task* getNextTask();
 
 	unsigned short getSlack() const;
+
+	void update();
 
 	virtual ~Job();
 
