@@ -66,7 +66,9 @@ void JobFactory::calculateSlack() {
 		if (!current)
 			continue;
 		unsigned short machineNr = current->getMachineNr();
-		if (machines[machineNr].machineBusy(currentTime)) {
+		if(j.jobBusy(currentTime)) {
+			j.calculateEarliestStartTimes(currentTime);
+		} else if (machines[machineNr].machineBusy(currentTime)) {
 			j.calculateEarliestStartTimes(machines[machineNr].getFreeFrom());
 		} else {
 			j.calculateEarliestStartTimes(currentTime);
