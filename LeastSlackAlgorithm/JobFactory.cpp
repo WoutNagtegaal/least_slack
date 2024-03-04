@@ -95,6 +95,8 @@ void JobFactory::printEndResults() {
 	};
 	std::sort(finishedJobs.begin(), finishedJobs.end(), sort);
 	for (Job &j : finishedJobs) {
+		std::cout << "We ball" << std::endl;
+		std::cout << j;
 		std::cout << j.getJobId() << " ";
 		j.printEndResult();
 	}
@@ -149,7 +151,9 @@ void JobFactory::schedule() {
 		logFile << "end jobloop" << std::endl;
 
 		++currentTime;
-		if (allJobsDone() || currentTime > 500) {
+		if (allJobsDone()) {
+			std::cout << "Done" << std::endl;
+
 			break;
 		}
 	}

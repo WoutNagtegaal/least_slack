@@ -75,6 +75,7 @@ void Job::printEndResult() {
 	auto taskIdSort = [](const Task &a, const Task &b) {
 		return a.getTaskId() < b.getTaskId();
 	};
+//	std::cout << "Fuck no" << std::endl;
 	std::sort(this->startedTasks.begin(), this->startedTasks.end(), taskIdSort);
 
 	std::cout << startedTasks[0].getStartTime() << " "
