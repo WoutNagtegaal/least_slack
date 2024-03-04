@@ -49,6 +49,7 @@ private:
 	unsigned short currentTime;
 	std::vector<Job> jobs;
 	std::vector<Job> finishedJobs;
+	std::vector<Machine> machines;
 
 };
 

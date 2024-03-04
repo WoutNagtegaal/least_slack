@@ -22,3 +22,7 @@ void Machine::startMachine(unsigned short currentTime,
 bool Machine::machineBusy(unsigned short currentTime) {
 	return currentTime < freeFrom;
 }
+
+unsigned short Machine::getFreeFrom() {
+	return this->freeFrom;
+}
