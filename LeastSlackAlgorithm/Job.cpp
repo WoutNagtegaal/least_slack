@@ -43,7 +43,7 @@ bool Job::startNextTask(unsigned short currentTime) {
 	startedTasks.push_back(currentTask);
 	tasks.erase(tasks.begin());
 
-//	std::cout << *nextTask;
+	std::cout << currentTask;
 	return true;
 }
 
@@ -55,38 +55,30 @@ void Job::sortTasksByTaskId() {
 }
 
 bool Job::jobDone(unsigned short currentTime) {
-	for (const Task &t : tasks) {
-		if (!t.taskDone(currentTime)) {
-//			std::cout << "job is not done:" << std::endl;
-			return false;
-		}
-//		std::cout << currentTime << std::endl;
+	if (tasks.size() == 0) {
+		return true;
 	}
-//	std::cout << "job is done:" << std::endl;
-	return true;
+	return false;
 }
 
 bool Job::taskAvailable() {
-	for (const Task &t : tasks) {
-		if (!t.taskStarted()) {
-			return true;
-		}
-	}
-	return false;
+	return tasks.size() != 0;
 }
 
 bool Job::jobBusy(unsigned short currentTime) {
-	for (const Task &t : tasks) {
-		if (t.taskBusy(currentTime)) {
-			return true;
-		}
-	}
-	return false;
+	if (this->jobDone(currentTime))
+		return false;
+	return currentTask.taskBusy(currentTime);
 }
 
 void Job::printEndResult() {
-	std::cout << tasks[0].getStartTime() << " "
-			<< tasks[tasks.size() - 1].getEndTime() << std::endl;
+	auto taskIdSort = [](const Task &a, const Task &b) {
+		return a.getTaskId() < b.getTaskId();
+	};
+	std::sort(this->startedTasks.begin(), this->startedTasks.end(), taskIdSort);
+
+	std::cout << startedTasks[0].getStartTime() << " "
+			<< startedTasks[startedTasks.size() - 1].getEndTime() << std::endl;
 }
 
 void Job::calculateEarliestStartTimes(unsigned short currentTime) {
@@ -95,19 +87,15 @@ void Job::calculateEarliestStartTimes(unsigned short currentTime) {
 	if (!this->taskAvailable())
 		return;
 	this->sortTasksByTaskId();
-	auto taskDone = [](const Task &t) {
-		return !t.taskStarted();
-	};
-	auto next = std::find_if(tasks.begin(), tasks.end(), taskDone);
-	if (next == tasks.end())
-		return;
-	for (auto t = next; t != tasks.end(); t++) {
+	unsigned short index = 0;
+	for (auto t = tasks.begin(); t != tasks.end(); t++) {
 		// first task does not have a previous task so it is set directly
-		if (t->getTaskId() == 0 || next == t) {
+		if (index == 0) {
 			t->setEarliestStartTime(currentTime);
 			continue;
 		}
 		t->setEarliestStartTime(calculateEarliestStartTime(*t));
+		index++;
 	}
 }
 

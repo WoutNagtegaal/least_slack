@@ -107,11 +107,11 @@ unsigned short JobFactory::getLongestJobDuration() {
 	auto longestTask = std::max_element(jobs.begin(), jobs.end(), maxDuration);
 	return longestTask->getDuration();
 }
-
-// TODO this is a stupid test function
-// replace with seperate functions
+#include <fstream>
 void JobFactory::schedule() {
+	std::ofstream logFile("logfile.txt");
 	while (1) {
+		logFile << "updating jobs" << std::endl;
 		for (auto j = jobs.begin(); j < jobs.end();) {
 			if (j->jobDone(currentTime)) {
 				finishedJobs.push_back(*j);
@@ -120,15 +120,25 @@ void JobFactory::schedule() {
 				++j;
 			}
 		}
-
+		logFile << "updating slack" << std::endl;
 		this->calculateSlack();
+		logFile << "sorting by slack" << std::endl;
 		this->sortJobsBySlack();
 
+		logFile << "start jobloop" << std::endl;
 		for (Job &j : jobs) {
-			if (j.jobDone(currentTime) || j.jobBusy(currentTime)) {
+			logFile << j;
+			if (j.jobDone(currentTime)) {
+				logFile << "job done" << std::endl;
+				continue;
+			}
+			if (j.jobBusy(currentTime)) {
+				logFile << "job busy" << std::endl;
 				continue;
 			}
 			Task *current = j.getNextTask();
+			if (!current)
+				continue;
 			unsigned short duration = current->getDuration();
 			unsigned short machineNr = current->getMachineNr();
 			if (!machines[machineNr].machineBusy(currentTime)) {
@@ -136,9 +146,10 @@ void JobFactory::schedule() {
 				machines[machineNr].startMachine(currentTime, duration);
 			}
 		}
+		logFile << "end jobloop" << std::endl;
 
 		++currentTime;
-		if (allJobsDone()) {
+		if (allJobsDone() || currentTime > 500) {
 			break;
 		}
 	}
