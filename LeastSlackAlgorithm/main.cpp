@@ -9,7 +9,7 @@
 #include "JobFactory.h"
 
 int main(int argc, char **argv) {
-	std::cout << "Starting program" << std::endl;
+//	std::cout << "Starting program" << std::endl;
 	// check if there were any arguments filled in from the command line
 	if (argc < 2) {
 		std::cerr << "Please enter a filename as the first argument"
@@ -18,16 +18,16 @@ int main(int argc, char **argv) {
 	}
 
 	ConfigReader config(argv[1]);
-	std::cout << argv[1] << std::endl;
+//	std::cout << argv[1] << std::endl;
 
 	if (!config.fileFound()) {
 		std::cout << "not found" << std::endl;
 		return 1;
 	}
 
-	std::cout << "found" << std::endl;
+//	std::cout << "found" << std::endl;
 	config.readConfig();
-	std::cout << config;
+//	std::cout << config;
 //	std::cout
 //			<< "------------------------------initial------------------------------"
 //			<< std::endl;
