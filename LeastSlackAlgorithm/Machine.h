@@ -16,6 +16,8 @@ public:
 	void startMachine(unsigned short currentTime, unsigned short duration);
 	bool machineBusy(unsigned short currentTime);
 
+	unsigned short getFreeFrom();
+
 private:
 	unsigned short freeFrom;
 };

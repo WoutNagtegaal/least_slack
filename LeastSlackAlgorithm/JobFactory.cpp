@@ -17,6 +17,9 @@ JobFactory::JobFactory(unsigned short nMachines, unsigned short nJobs,
 	// don't save the config vector directly
 	// we want to save it into the correct classes
 	this->initJobs(config);
+	for (int i = 0; i < nMachines; i++) {
+		machines.push_back(Machine());
+	}
 }
 
 JobFactory::JobFactory(const JobFactory &rhs) :
@@ -30,6 +33,9 @@ JobFactory::JobFactory(const ConfigReader &rhs) {
 	this->nMachines = rhs.getNMachines();
 	this->nJobs = rhs.getNJobs();
 	this->initJobs(rhs.getConfigValues());
+	for (int i = 0; i < nMachines; i++) {
+		machines.push_back(Machine());
+	}
 }
 
 void JobFactory::initJobs(std::vector<std::vector<unsigned short> > config) {
@@ -56,7 +62,15 @@ void JobFactory::sortJobsByJobId() {
 void JobFactory::calculateSlack() {
 	// preparation for the slack calculation
 	for (Job &j : this->jobs) {
-		j.calculateEarliestStartTimes(currentTime);
+		Task *current = j.getNextTask();
+		if (!current)
+			continue;
+		unsigned short machineNr = current->getMachineNr();
+		if (machines[machineNr].machineBusy(currentTime)) {
+			j.calculateEarliestStartTimes(machines[machineNr].getFreeFrom());
+		} else {
+			j.calculateEarliestStartTimes(currentTime);
+		}
 		j.calculateDuration();
 	}
 	// making seperate variable so it isn't calcuted for every job
@@ -97,10 +111,6 @@ unsigned short JobFactory::getLongestJobDuration() {
 // TODO this is a stupid test function
 // replace with seperate functions
 void JobFactory::schedule() {
-	std::vector<Machine> machines;
-	for (int i = 0; i < nMachines; i++) {
-		machines.push_back(Machine());
-	}
 	while (1) {
 		for (auto j = jobs.begin(); j < jobs.end();) {
 			if (j->jobDone(currentTime)) {
