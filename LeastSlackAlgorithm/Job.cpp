@@ -18,8 +18,8 @@ Job::Job(unsigned short jobId, std::vector<unsigned short> config) :
 }
 
 Job::Job(const Job &rhs) :
-		jobId(rhs.jobId), tasks(rhs.tasks), duration(rhs.duration), slack(
-				rhs.slack), startedTasks(rhs.startedTasks) {
+		jobId(rhs.jobId), tasks(rhs.tasks), startedTasks(rhs.startedTasks), duration(rhs.duration), slack(
+				rhs.slack) {
 }
 
 Task* Job::getNextTask() {
@@ -42,9 +42,6 @@ bool Job::startNextTask(unsigned short currentTime) {
 	currentTask.startTask(currentTime);
 	startedTasks.push_back(currentTask);
 	tasks.erase(tasks.begin());
-
-	std::cout << currentTask;
-
 	return true;
 }
 
@@ -56,10 +53,10 @@ void Job::sortTasksByTaskId() {
 }
 
 bool Job::jobDone(unsigned short currentTime) {
-	if (tasks.size() == 0) {
-		return true;
+	if (tasks.size() != 0 || startedTasks.size() == 0) {
+		return false;
 	}
-	return false;
+	return currentTask.taskDone(currentTime);
 }
 
 bool Job::taskAvailable() {
@@ -77,11 +74,11 @@ void Job::printEndResult() {
 		return a.getTaskId() < b.getTaskId();
 	};
 	std::sort(this->startedTasks.begin(), this->startedTasks.end(), taskIdSort);
-	std::cout << "Fuck no the second" << std::endl;
+//	std::cout << "Fuck no the second" << std::endl;
 	for(Task t: startedTasks) {
-		std::cout << t;
+//		std::cout << t;
 	}
-	std::cout << "Fuck no the thirs" << std::endl;
+//	std::cout << "Fuck no the thirs" << std::endl;
 	std::cout << startedTasks[0].getStartTime() << " "
 			<< startedTasks[startedTasks.size() - 1].getEndTime() << std::endl;
 }
