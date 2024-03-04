@@ -66,7 +66,7 @@ void JobFactory::calculateSlack() {
 		if (!current)
 			continue;
 		unsigned short machineNr = current->getMachineNr();
-		if(j.jobBusy(currentTime)) {
+		if (j.jobBusy(currentTime)) {
 			j.calculateEarliestStartTimes(currentTime);
 		} else if (machines[machineNr].machineBusy(currentTime)) {
 			j.calculateEarliestStartTimes(machines[machineNr].getFreeFrom());
@@ -102,6 +102,17 @@ void JobFactory::printEndResults() {
 	}
 }
 
+void JobFactory::removeFinishedJobs() {
+	for (auto j = jobs.begin(); j < jobs.end();) {
+		if (j->jobDone(currentTime)) {
+			finishedJobs.push_back(*j);
+			j = jobs.erase(j);
+		} else {
+			++j;
+		}
+	}
+}
+
 unsigned short JobFactory::getLongestJobDuration() {
 	auto maxDuration = [](const Job &a, const Job &b) {
 		return a.getDuration() < b.getDuration();
@@ -110,29 +121,25 @@ unsigned short JobFactory::getLongestJobDuration() {
 	return longestTask->getDuration();
 }
 
-// TODO this is a stupid test function
-// replace with seperate functions
 void JobFactory::schedule() {
-	while (1) {
-		for (auto j = jobs.begin(); j < jobs.end();) {
-			if (j->jobDone(currentTime)) {
-				finishedJobs.push_back(*j);
-				j = jobs.erase(j);
-			} else {
-				++j;
-			}
-		}
-
+	bool done = false;
+	while (!done) {
+		this->removeFinishedJobs();
 		this->calculateSlack();
 		this->sortJobsBySlack();
 
+		std::cout << "----------------------------------------------"
+				<< std::endl;
+
 		for (Job &j : jobs) {
-			if (j.jobDone(currentTime) || j.jobBusy(currentTime)) {
+			if (j.jobBusy(currentTime)) {
 				continue;
 			}
 			Task *current = j.getNextTask();
 			unsigned short duration = current->getDuration();
 			unsigned short machineNr = current->getMachineNr();
+//			std::cout << j;
+			std::cout << "Slack: " << j.getSlack() << std::endl;
 			if (!machines[machineNr].machineBusy(currentTime)) {
 				j.startNextTask(currentTime);
 				machines[machineNr].startMachine(currentTime, duration);
@@ -141,7 +148,7 @@ void JobFactory::schedule() {
 
 		++currentTime;
 		if (allJobsDone()) {
-			break;
+			done = true;
 		}
 	}
 }

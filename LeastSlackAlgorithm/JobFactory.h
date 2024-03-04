@@ -28,6 +28,7 @@ public:
 	void calculateSlack();
 	void sortJobsByJobId();
 	void sortJobsBySlack();
+	void removeFinishedJobs();
 
 	bool allJobsDone();
 
