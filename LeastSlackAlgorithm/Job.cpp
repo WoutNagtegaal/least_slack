@@ -26,17 +26,16 @@ Job::Job(const Job &rhs) :
 				rhs.slack) {
 }
 
-Task* Job::getNextTask() {
+Task& Job::getNextTask() {
 	this->sortTasksByTaskId();
 	auto taskDone = [](const Task &t) {
 		return !t.taskStarted();
 	};
 	auto next = std::find_if(tasks.begin(), tasks.end(), taskDone);
-//	std::cout << *next;
 	if (next != tasks.end()) {
-		return &(*next);
+		return *next;
 	}
-	return nullptr;
+	return tasks[tasks.size() -1];
 }
 
 bool Job::startNextTask(unsigned short currentTime) {
@@ -47,12 +46,12 @@ bool Job::startNextTask(unsigned short currentTime) {
 	if (this->jobDone(currentTime)) {
 		return false;
 	}
-	Task *nextTask = this->getNextTask();
-	if (!nextTask) {
+	Task &nextTask = this->getNextTask();
+	if (nextTask.taskStarted()) {
 		return false;
 	}
-	nextTask->startTask(currentTime);
-//	std::cout << *nextTask;
+	nextTask.startTask(currentTime);
+	std::cout << nextTask;
 	return true;
 }
 
@@ -63,12 +62,9 @@ void Job::sortTasksByTaskId() {
 bool Job::jobDone(unsigned short currentTime) {
 	for (const Task &t : tasks) {
 		if (!t.taskDone(currentTime)) {
-//			std::cout << "job is not done:" << std::endl;
 			return false;
 		}
-//		std::cout << currentTime << std::endl;
 	}
-//	std::cout << "job is done:" << std::endl;
 	return true;
 }
 
