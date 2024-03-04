@@ -19,7 +19,7 @@ Job::Job(unsigned short jobId, std::vector<unsigned short> config) :
 
 Job::Job(const Job &rhs) :
 		jobId(rhs.jobId), tasks(rhs.tasks), duration(rhs.duration), slack(
-				rhs.slack) {
+				rhs.slack), startedTasks(rhs.startedTasks) {
 }
 
 Task* Job::getNextTask() {
@@ -44,6 +44,7 @@ bool Job::startNextTask(unsigned short currentTime) {
 	tasks.erase(tasks.begin());
 
 	std::cout << currentTask;
+
 	return true;
 }
 
@@ -75,9 +76,12 @@ void Job::printEndResult() {
 	auto taskIdSort = [](const Task &a, const Task &b) {
 		return a.getTaskId() < b.getTaskId();
 	};
-//	std::cout << "Fuck no" << std::endl;
 	std::sort(this->startedTasks.begin(), this->startedTasks.end(), taskIdSort);
-
+	std::cout << "Fuck no the second" << std::endl;
+	for(Task t: startedTasks) {
+		std::cout << t;
+	}
+	std::cout << "Fuck no the thirs" << std::endl;
 	std::cout << startedTasks[0].getStartTime() << " "
 			<< startedTasks[startedTasks.size() - 1].getEndTime() << std::endl;
 }

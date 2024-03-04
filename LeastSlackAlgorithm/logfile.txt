@@ -2,7 +2,6 @@ updating jobs
 updating slack
 sorting by slack
 start jobloop
-Fuck
 Job nr 3 takes 9 sec with 0 sec slack with the following tasks: 
 Task nr 0 on machine nr 1 takes 5 sec begins at earliest on t=0sec starts at 0 sec and ends at 0 sec
 Task nr 1 on machine nr 0 takes 5 sec begins at earliest on t=0sec starts at 0 sec and ends at 0 sec
@@ -10,8 +9,6 @@ Task nr 2 on machine nr 2 takes 5 sec begins at earliest on t=0sec starts at 0 s
 Task nr 3 on machine nr 3 takes 3 sec begins at earliest on t=0sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 4 takes 8 sec begins at earliest on t=0sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 5 takes 9 sec begins at earliest on t=0sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 2 takes 7 sec with 2 sec slack with the following tasks: 
 Task nr 0 on machine nr 2 takes 5 sec begins at earliest on t=0sec starts at 0 sec and ends at 0 sec
 Task nr 1 on machine nr 3 takes 4 sec begins at earliest on t=0sec starts at 0 sec and ends at 0 sec
@@ -19,8 +16,6 @@ Task nr 2 on machine nr 5 takes 8 sec begins at earliest on t=0sec starts at 0 s
 Task nr 3 on machine nr 0 takes 9 sec begins at earliest on t=0sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 1 takes 1 sec begins at earliest on t=0sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 4 takes 7 sec begins at earliest on t=0sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 0 takes 6 sec with 3 sec slack with the following tasks: 
 Task nr 0 on machine nr 2 takes 1 sec begins at earliest on t=0sec starts at 0 sec and ends at 0 sec
 Task nr 1 on machine nr 0 takes 3 sec begins at earliest on t=0sec starts at 0 sec and ends at 0 sec
@@ -28,8 +23,6 @@ Task nr 2 on machine nr 1 takes 6 sec begins at earliest on t=0sec starts at 0 s
 Task nr 3 on machine nr 3 takes 7 sec begins at earliest on t=0sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 5 takes 3 sec begins at earliest on t=0sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 4 takes 6 sec begins at earliest on t=0sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 1 takes 4 sec with 5 sec slack with the following tasks: 
 Task nr 0 on machine nr 1 takes 8 sec begins at earliest on t=0sec starts at 0 sec and ends at 0 sec
 Task nr 1 on machine nr 2 takes 5 sec begins at earliest on t=0sec starts at 0 sec and ends at 0 sec
@@ -37,8 +30,6 @@ Task nr 2 on machine nr 4 takes 10 sec begins at earliest on t=0sec starts at 0 
 Task nr 3 on machine nr 5 takes 10 sec begins at earliest on t=0sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 10 sec begins at earliest on t=0sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 4 sec begins at earliest on t=0sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 4 takes 1 sec with 8 sec slack with the following tasks: 
 Task nr 0 on machine nr 2 takes 9 sec begins at earliest on t=0sec starts at 0 sec and ends at 0 sec
 Task nr 1 on machine nr 1 takes 3 sec begins at earliest on t=0sec starts at 0 sec and ends at 0 sec
@@ -46,8 +37,6 @@ Task nr 2 on machine nr 4 takes 5 sec begins at earliest on t=0sec starts at 0 s
 Task nr 3 on machine nr 5 takes 4 sec begins at earliest on t=0sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 3 sec begins at earliest on t=0sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 1 sec begins at earliest on t=0sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 5 takes 1 sec with 8 sec slack with the following tasks: 
 Task nr 0 on machine nr 1 takes 3 sec begins at earliest on t=0sec starts at 0 sec and ends at 0 sec
 Task nr 1 on machine nr 3 takes 3 sec begins at earliest on t=0sec starts at 0 sec and ends at 0 sec
@@ -55,13 +44,11 @@ Task nr 2 on machine nr 5 takes 9 sec begins at earliest on t=0sec starts at 0 s
 Task nr 3 on machine nr 0 takes 10 sec begins at earliest on t=0sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 4 takes 4 sec begins at earliest on t=0sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 2 takes 1 sec begins at earliest on t=0sec starts at 0 sec and ends at 0 sec
-You
 end jobloop
 updating jobs
 updating slack
 sorting by slack
 start jobloop
-Fuck
 Job nr 0 takes 11 sec with 0 sec slack with the following tasks: 
 Task nr 0 on machine nr 2 takes 1 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 1 on machine nr 0 takes 3 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
@@ -69,17 +56,13 @@ Task nr 2 on machine nr 1 takes 6 sec begins at earliest on t=5sec starts at 0 s
 Task nr 3 on machine nr 3 takes 7 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 5 takes 3 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 4 takes 6 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 3 takes 10 sec with 1 sec slack with the following tasks: 
 Task nr 1 on machine nr 0 takes 5 sec begins at earliest on t=1sec starts at 0 sec and ends at 0 sec
 Task nr 2 on machine nr 2 takes 5 sec begins at earliest on t=1sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 3 takes 3 sec begins at earliest on t=1sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 4 takes 8 sec begins at earliest on t=1sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 5 takes 9 sec begins at earliest on t=1sec starts at 0 sec and ends at 0 sec
-You
 job busy
-Fuck
 Job nr 1 takes 9 sec with 2 sec slack with the following tasks: 
 Task nr 0 on machine nr 1 takes 8 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 1 on machine nr 2 takes 5 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
@@ -87,16 +70,12 @@ Task nr 2 on machine nr 4 takes 10 sec begins at earliest on t=5sec starts at 0 
 Task nr 3 on machine nr 5 takes 10 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 10 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 4 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 2 takes 8 sec with 3 sec slack with the following tasks: 
 Task nr 1 on machine nr 3 takes 4 sec begins at earliest on t=1sec starts at 0 sec and ends at 0 sec
 Task nr 2 on machine nr 5 takes 8 sec begins at earliest on t=1sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 0 takes 9 sec begins at earliest on t=1sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 1 takes 1 sec begins at earliest on t=1sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 4 takes 7 sec begins at earliest on t=1sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 4 takes 6 sec with 5 sec slack with the following tasks: 
 Task nr 0 on machine nr 2 takes 9 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 1 on machine nr 1 takes 3 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
@@ -104,8 +83,6 @@ Task nr 2 on machine nr 4 takes 5 sec begins at earliest on t=5sec starts at 0 s
 Task nr 3 on machine nr 5 takes 4 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 3 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 1 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 5 takes 6 sec with 5 sec slack with the following tasks: 
 Task nr 0 on machine nr 1 takes 3 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 1 on machine nr 3 takes 3 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
@@ -113,13 +90,11 @@ Task nr 2 on machine nr 5 takes 9 sec begins at earliest on t=5sec starts at 0 s
 Task nr 3 on machine nr 0 takes 10 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 4 takes 4 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 2 takes 1 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
-You
 end jobloop
 updating jobs
 updating slack
 sorting by slack
 start jobloop
-Fuck
 Job nr 0 takes 11 sec with 0 sec slack with the following tasks: 
 Task nr 0 on machine nr 2 takes 1 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 1 on machine nr 0 takes 3 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
@@ -127,16 +102,12 @@ Task nr 2 on machine nr 1 takes 6 sec begins at earliest on t=5sec starts at 0 s
 Task nr 3 on machine nr 3 takes 7 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 5 takes 3 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 4 takes 6 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 3 takes 11 sec with 0 sec slack with the following tasks: 
 Task nr 1 on machine nr 0 takes 5 sec begins at earliest on t=2sec starts at 0 sec and ends at 0 sec
 Task nr 2 on machine nr 2 takes 5 sec begins at earliest on t=2sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 3 takes 3 sec begins at earliest on t=2sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 4 takes 8 sec begins at earliest on t=2sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 5 takes 9 sec begins at earliest on t=2sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 1 takes 9 sec with 2 sec slack with the following tasks: 
 Task nr 0 on machine nr 1 takes 8 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 1 on machine nr 2 takes 5 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
@@ -144,15 +115,11 @@ Task nr 2 on machine nr 4 takes 10 sec begins at earliest on t=5sec starts at 0 
 Task nr 3 on machine nr 5 takes 10 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 10 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 4 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 2 takes 9 sec with 2 sec slack with the following tasks: 
 Task nr 2 on machine nr 5 takes 8 sec begins at earliest on t=2sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 0 takes 9 sec begins at earliest on t=2sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 1 takes 1 sec begins at earliest on t=2sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 4 takes 7 sec begins at earliest on t=2sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 4 takes 6 sec with 5 sec slack with the following tasks: 
 Task nr 0 on machine nr 2 takes 9 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 1 on machine nr 1 takes 3 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
@@ -160,8 +127,6 @@ Task nr 2 on machine nr 4 takes 5 sec begins at earliest on t=5sec starts at 0 s
 Task nr 3 on machine nr 5 takes 4 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 3 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 1 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 5 takes 6 sec with 5 sec slack with the following tasks: 
 Task nr 0 on machine nr 1 takes 3 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 1 on machine nr 3 takes 3 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
@@ -169,26 +134,20 @@ Task nr 2 on machine nr 5 takes 9 sec begins at earliest on t=5sec starts at 0 s
 Task nr 3 on machine nr 0 takes 10 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 4 takes 4 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 2 takes 1 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
-You
 end jobloop
 updating jobs
 updating slack
 sorting by slack
 start jobloop
-Fuck
 Job nr 3 takes 14 sec with 0 sec slack with the following tasks: 
 Task nr 2 on machine nr 2 takes 5 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 3 takes 3 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 4 takes 8 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 5 takes 9 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 2 takes 14 sec with 0 sec slack with the following tasks: 
 Task nr 3 on machine nr 0 takes 9 sec begins at earliest on t=7sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 1 takes 1 sec begins at earliest on t=7sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 4 takes 7 sec begins at earliest on t=7sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 0 takes 11 sec with 3 sec slack with the following tasks: 
 Task nr 0 on machine nr 2 takes 1 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 1 on machine nr 0 takes 3 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
@@ -196,8 +155,6 @@ Task nr 2 on machine nr 1 takes 6 sec begins at earliest on t=5sec starts at 0 s
 Task nr 3 on machine nr 3 takes 7 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 5 takes 3 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 4 takes 6 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 1 takes 9 sec with 5 sec slack with the following tasks: 
 Task nr 0 on machine nr 1 takes 8 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 1 on machine nr 2 takes 5 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
@@ -205,8 +162,6 @@ Task nr 2 on machine nr 4 takes 10 sec begins at earliest on t=5sec starts at 0 
 Task nr 3 on machine nr 5 takes 10 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 10 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 4 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 4 takes 6 sec with 8 sec slack with the following tasks: 
 Task nr 0 on machine nr 2 takes 9 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 1 on machine nr 1 takes 3 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
@@ -214,8 +169,6 @@ Task nr 2 on machine nr 4 takes 5 sec begins at earliest on t=5sec starts at 0 s
 Task nr 3 on machine nr 5 takes 4 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 3 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 1 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 5 takes 6 sec with 8 sec slack with the following tasks: 
 Task nr 0 on machine nr 1 takes 3 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 1 on machine nr 3 takes 3 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
@@ -223,26 +176,20 @@ Task nr 2 on machine nr 5 takes 9 sec begins at earliest on t=5sec starts at 0 s
 Task nr 3 on machine nr 0 takes 10 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 4 takes 4 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 2 takes 1 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
-You
 end jobloop
 updating jobs
 updating slack
 sorting by slack
 start jobloop
-Fuck
 Job nr 3 takes 14 sec with 0 sec slack with the following tasks: 
 Task nr 2 on machine nr 2 takes 5 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 3 takes 3 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 4 takes 8 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 5 takes 9 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 2 takes 14 sec with 0 sec slack with the following tasks: 
 Task nr 3 on machine nr 0 takes 9 sec begins at earliest on t=7sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 1 takes 1 sec begins at earliest on t=7sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 4 takes 7 sec begins at earliest on t=7sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 0 takes 11 sec with 3 sec slack with the following tasks: 
 Task nr 0 on machine nr 2 takes 1 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 1 on machine nr 0 takes 3 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
@@ -250,8 +197,6 @@ Task nr 2 on machine nr 1 takes 6 sec begins at earliest on t=5sec starts at 0 s
 Task nr 3 on machine nr 3 takes 7 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 5 takes 3 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 4 takes 6 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 1 takes 9 sec with 5 sec slack with the following tasks: 
 Task nr 0 on machine nr 1 takes 8 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 1 on machine nr 2 takes 5 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
@@ -259,8 +204,6 @@ Task nr 2 on machine nr 4 takes 10 sec begins at earliest on t=5sec starts at 0 
 Task nr 3 on machine nr 5 takes 10 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 10 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 4 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 4 takes 6 sec with 8 sec slack with the following tasks: 
 Task nr 0 on machine nr 2 takes 9 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 1 on machine nr 1 takes 3 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
@@ -268,8 +211,6 @@ Task nr 2 on machine nr 4 takes 5 sec begins at earliest on t=5sec starts at 0 s
 Task nr 3 on machine nr 5 takes 4 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 3 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 1 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 5 takes 6 sec with 8 sec slack with the following tasks: 
 Task nr 0 on machine nr 1 takes 3 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 1 on machine nr 3 takes 3 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
@@ -277,26 +218,20 @@ Task nr 2 on machine nr 5 takes 9 sec begins at earliest on t=5sec starts at 0 s
 Task nr 3 on machine nr 0 takes 10 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 4 takes 4 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 2 takes 1 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
-You
 end jobloop
 updating jobs
 updating slack
 sorting by slack
 start jobloop
-Fuck
 Job nr 3 takes 14 sec with 0 sec slack with the following tasks: 
 Task nr 2 on machine nr 2 takes 5 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 3 takes 3 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 4 takes 8 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 5 takes 9 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 2 takes 14 sec with 0 sec slack with the following tasks: 
 Task nr 3 on machine nr 0 takes 9 sec begins at earliest on t=7sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 1 takes 1 sec begins at earliest on t=7sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 4 takes 7 sec begins at earliest on t=7sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 0 takes 11 sec with 3 sec slack with the following tasks: 
 Task nr 0 on machine nr 2 takes 1 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 1 on machine nr 0 takes 3 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
@@ -304,8 +239,6 @@ Task nr 2 on machine nr 1 takes 6 sec begins at earliest on t=5sec starts at 0 s
 Task nr 3 on machine nr 3 takes 7 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 5 takes 3 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 4 takes 6 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 1 takes 9 sec with 5 sec slack with the following tasks: 
 Task nr 0 on machine nr 1 takes 8 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 1 on machine nr 2 takes 5 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
@@ -313,8 +246,6 @@ Task nr 2 on machine nr 4 takes 10 sec begins at earliest on t=5sec starts at 0 
 Task nr 3 on machine nr 5 takes 10 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 10 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 4 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 4 takes 6 sec with 8 sec slack with the following tasks: 
 Task nr 0 on machine nr 2 takes 9 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 1 on machine nr 1 takes 3 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
@@ -322,8 +253,6 @@ Task nr 2 on machine nr 4 takes 5 sec begins at earliest on t=5sec starts at 0 s
 Task nr 3 on machine nr 5 takes 4 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 3 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 1 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 5 takes 6 sec with 8 sec slack with the following tasks: 
 Task nr 0 on machine nr 1 takes 3 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 1 on machine nr 3 takes 3 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
@@ -331,13 +260,11 @@ Task nr 2 on machine nr 5 takes 9 sec begins at earliest on t=5sec starts at 0 s
 Task nr 3 on machine nr 0 takes 10 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 4 takes 4 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 2 takes 1 sec begins at earliest on t=5sec starts at 0 sec and ends at 0 sec
-You
 end jobloop
 updating jobs
 updating slack
 sorting by slack
 start jobloop
-Fuck
 Job nr 0 takes 16 sec with 0 sec slack with the following tasks: 
 Task nr 0 on machine nr 2 takes 1 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
 Task nr 1 on machine nr 0 takes 3 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
@@ -345,29 +272,21 @@ Task nr 2 on machine nr 1 takes 6 sec begins at earliest on t=10sec starts at 0 
 Task nr 3 on machine nr 3 takes 7 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 5 takes 3 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 4 takes 6 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 3 takes 15 sec with 1 sec slack with the following tasks: 
 Task nr 3 on machine nr 3 takes 3 sec begins at earliest on t=6sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 4 takes 8 sec begins at earliest on t=6sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 5 takes 9 sec begins at earliest on t=6sec starts at 0 sec and ends at 0 sec
-You
 job busy
-Fuck
 Job nr 2 takes 14 sec with 2 sec slack with the following tasks: 
 Task nr 3 on machine nr 0 takes 9 sec begins at earliest on t=7sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 1 takes 1 sec begins at earliest on t=7sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 4 takes 7 sec begins at earliest on t=7sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 1 takes 14 sec with 2 sec slack with the following tasks: 
 Task nr 1 on machine nr 2 takes 5 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
 Task nr 2 on machine nr 4 takes 10 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 5 takes 10 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 10 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 4 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 5 takes 14 sec with 2 sec slack with the following tasks: 
 Task nr 0 on machine nr 1 takes 3 sec begins at earliest on t=13sec starts at 0 sec and ends at 0 sec
 Task nr 1 on machine nr 3 takes 3 sec begins at earliest on t=13sec starts at 0 sec and ends at 0 sec
@@ -375,8 +294,6 @@ Task nr 2 on machine nr 5 takes 9 sec begins at earliest on t=13sec starts at 0 
 Task nr 3 on machine nr 0 takes 10 sec begins at earliest on t=13sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 4 takes 4 sec begins at earliest on t=13sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 2 takes 1 sec begins at earliest on t=13sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 4 takes 11 sec with 5 sec slack with the following tasks: 
 Task nr 0 on machine nr 2 takes 9 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
 Task nr 1 on machine nr 1 takes 3 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
@@ -384,13 +301,11 @@ Task nr 2 on machine nr 4 takes 5 sec begins at earliest on t=10sec starts at 0 
 Task nr 3 on machine nr 5 takes 4 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 3 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 1 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
-You
 end jobloop
 updating jobs
 updating slack
 sorting by slack
 start jobloop
-Fuck
 Job nr 0 takes 16 sec with 0 sec slack with the following tasks: 
 Task nr 0 on machine nr 2 takes 1 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
 Task nr 1 on machine nr 0 takes 3 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
@@ -398,28 +313,20 @@ Task nr 2 on machine nr 1 takes 6 sec begins at earliest on t=10sec starts at 0 
 Task nr 3 on machine nr 3 takes 7 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 5 takes 3 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 4 takes 6 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 3 takes 16 sec with 0 sec slack with the following tasks: 
 Task nr 3 on machine nr 3 takes 3 sec begins at earliest on t=7sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 4 takes 8 sec begins at earliest on t=7sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 5 takes 9 sec begins at earliest on t=7sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 2 takes 14 sec with 2 sec slack with the following tasks: 
 Task nr 3 on machine nr 0 takes 9 sec begins at earliest on t=7sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 1 takes 1 sec begins at earliest on t=7sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 4 takes 7 sec begins at earliest on t=7sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 1 takes 14 sec with 2 sec slack with the following tasks: 
 Task nr 1 on machine nr 2 takes 5 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
 Task nr 2 on machine nr 4 takes 10 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 5 takes 10 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 10 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 4 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 5 takes 14 sec with 2 sec slack with the following tasks: 
 Task nr 0 on machine nr 1 takes 3 sec begins at earliest on t=13sec starts at 0 sec and ends at 0 sec
 Task nr 1 on machine nr 3 takes 3 sec begins at earliest on t=13sec starts at 0 sec and ends at 0 sec
@@ -427,8 +334,6 @@ Task nr 2 on machine nr 5 takes 9 sec begins at earliest on t=13sec starts at 0 
 Task nr 3 on machine nr 0 takes 10 sec begins at earliest on t=13sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 4 takes 4 sec begins at earliest on t=13sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 2 takes 1 sec begins at earliest on t=13sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 4 takes 11 sec with 5 sec slack with the following tasks: 
 Task nr 0 on machine nr 2 takes 9 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
 Task nr 1 on machine nr 1 takes 3 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
@@ -436,23 +341,17 @@ Task nr 2 on machine nr 4 takes 5 sec begins at earliest on t=10sec starts at 0 
 Task nr 3 on machine nr 5 takes 4 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 3 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 1 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
-You
 end jobloop
 updating jobs
 updating slack
 sorting by slack
 start jobloop
-Fuck
 Job nr 2 takes 20 sec with 0 sec slack with the following tasks: 
 Task nr 4 on machine nr 1 takes 1 sec begins at earliest on t=13sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 4 takes 7 sec begins at earliest on t=13sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 3 takes 17 sec with 3 sec slack with the following tasks: 
 Task nr 4 on machine nr 4 takes 8 sec begins at earliest on t=8sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 5 takes 9 sec begins at earliest on t=8sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 0 takes 16 sec with 4 sec slack with the following tasks: 
 Task nr 0 on machine nr 2 takes 1 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
 Task nr 1 on machine nr 0 takes 3 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
@@ -460,16 +359,12 @@ Task nr 2 on machine nr 1 takes 6 sec begins at earliest on t=10sec starts at 0 
 Task nr 3 on machine nr 3 takes 7 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 5 takes 3 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 4 takes 6 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 1 takes 14 sec with 6 sec slack with the following tasks: 
 Task nr 1 on machine nr 2 takes 5 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
 Task nr 2 on machine nr 4 takes 10 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 5 takes 10 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 10 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 4 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 5 takes 14 sec with 6 sec slack with the following tasks: 
 Task nr 0 on machine nr 1 takes 3 sec begins at earliest on t=13sec starts at 0 sec and ends at 0 sec
 Task nr 1 on machine nr 3 takes 3 sec begins at earliest on t=13sec starts at 0 sec and ends at 0 sec
@@ -477,8 +372,6 @@ Task nr 2 on machine nr 5 takes 9 sec begins at earliest on t=13sec starts at 0 
 Task nr 3 on machine nr 0 takes 10 sec begins at earliest on t=13sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 4 takes 4 sec begins at earliest on t=13sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 2 takes 1 sec begins at earliest on t=13sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 4 takes 11 sec with 9 sec slack with the following tasks: 
 Task nr 0 on machine nr 2 takes 9 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
 Task nr 1 on machine nr 1 takes 3 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
@@ -486,22 +379,16 @@ Task nr 2 on machine nr 4 takes 5 sec begins at earliest on t=10sec starts at 0 
 Task nr 3 on machine nr 5 takes 4 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 3 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 1 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
-You
 end jobloop
 updating jobs
 updating slack
 sorting by slack
 start jobloop
-Fuck
 Job nr 2 takes 20 sec with 0 sec slack with the following tasks: 
 Task nr 4 on machine nr 1 takes 1 sec begins at earliest on t=13sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 4 takes 7 sec begins at earliest on t=13sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 3 takes 19 sec with 1 sec slack with the following tasks: 
 Task nr 5 on machine nr 5 takes 9 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 0 takes 16 sec with 4 sec slack with the following tasks: 
 Task nr 0 on machine nr 2 takes 1 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
 Task nr 1 on machine nr 0 takes 3 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
@@ -509,16 +396,12 @@ Task nr 2 on machine nr 1 takes 6 sec begins at earliest on t=10sec starts at 0 
 Task nr 3 on machine nr 3 takes 7 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 5 takes 3 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 4 takes 6 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 1 takes 14 sec with 6 sec slack with the following tasks: 
 Task nr 1 on machine nr 2 takes 5 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
 Task nr 2 on machine nr 4 takes 10 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 5 takes 10 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 10 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 4 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 5 takes 14 sec with 6 sec slack with the following tasks: 
 Task nr 0 on machine nr 1 takes 3 sec begins at earliest on t=13sec starts at 0 sec and ends at 0 sec
 Task nr 1 on machine nr 3 takes 3 sec begins at earliest on t=13sec starts at 0 sec and ends at 0 sec
@@ -526,8 +409,6 @@ Task nr 2 on machine nr 5 takes 9 sec begins at earliest on t=13sec starts at 0 
 Task nr 3 on machine nr 0 takes 10 sec begins at earliest on t=13sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 4 takes 4 sec begins at earliest on t=13sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 2 takes 1 sec begins at earliest on t=13sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 4 takes 11 sec with 9 sec slack with the following tasks: 
 Task nr 0 on machine nr 2 takes 9 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
 Task nr 1 on machine nr 1 takes 3 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
@@ -535,22 +416,16 @@ Task nr 2 on machine nr 4 takes 5 sec begins at earliest on t=10sec starts at 0 
 Task nr 3 on machine nr 5 takes 4 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 3 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 1 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
-You
 end jobloop
 updating jobs
 updating slack
 sorting by slack
 start jobloop
-Fuck
 Job nr 2 takes 20 sec with 0 sec slack with the following tasks: 
 Task nr 4 on machine nr 1 takes 1 sec begins at earliest on t=13sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 4 takes 7 sec begins at earliest on t=13sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 3 takes 19 sec with 1 sec slack with the following tasks: 
 Task nr 5 on machine nr 5 takes 9 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 0 takes 16 sec with 4 sec slack with the following tasks: 
 Task nr 0 on machine nr 2 takes 1 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
 Task nr 1 on machine nr 0 takes 3 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
@@ -558,16 +433,12 @@ Task nr 2 on machine nr 1 takes 6 sec begins at earliest on t=10sec starts at 0 
 Task nr 3 on machine nr 3 takes 7 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 5 takes 3 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 4 takes 6 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 1 takes 14 sec with 6 sec slack with the following tasks: 
 Task nr 1 on machine nr 2 takes 5 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
 Task nr 2 on machine nr 4 takes 10 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 5 takes 10 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 10 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 4 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 5 takes 14 sec with 6 sec slack with the following tasks: 
 Task nr 0 on machine nr 1 takes 3 sec begins at earliest on t=13sec starts at 0 sec and ends at 0 sec
 Task nr 1 on machine nr 3 takes 3 sec begins at earliest on t=13sec starts at 0 sec and ends at 0 sec
@@ -575,8 +446,6 @@ Task nr 2 on machine nr 5 takes 9 sec begins at earliest on t=13sec starts at 0 
 Task nr 3 on machine nr 0 takes 10 sec begins at earliest on t=13sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 4 takes 4 sec begins at earliest on t=13sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 2 takes 1 sec begins at earliest on t=13sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 4 takes 11 sec with 9 sec slack with the following tasks: 
 Task nr 0 on machine nr 2 takes 9 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
 Task nr 1 on machine nr 1 takes 3 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
@@ -584,34 +453,26 @@ Task nr 2 on machine nr 4 takes 5 sec begins at earliest on t=10sec starts at 0 
 Task nr 3 on machine nr 5 takes 4 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 3 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 1 sec begins at earliest on t=10sec starts at 0 sec and ends at 0 sec
-You
 end jobloop
 updating jobs
 updating slack
 sorting by slack
 start jobloop
-Fuck
 Job nr 0 takes 22 sec with 0 sec slack with the following tasks: 
 Task nr 1 on machine nr 0 takes 3 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
 Task nr 2 on machine nr 1 takes 6 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 3 takes 7 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 5 takes 3 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 4 takes 6 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 2 takes 20 sec with 2 sec slack with the following tasks: 
 Task nr 4 on machine nr 1 takes 1 sec begins at earliest on t=13sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 4 takes 7 sec begins at earliest on t=13sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 1 takes 15 sec with 7 sec slack with the following tasks: 
 Task nr 1 on machine nr 2 takes 5 sec begins at earliest on t=11sec starts at 0 sec and ends at 0 sec
 Task nr 2 on machine nr 4 takes 10 sec begins at earliest on t=11sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 5 takes 10 sec begins at earliest on t=11sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 10 sec begins at earliest on t=11sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 4 sec begins at earliest on t=11sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 5 takes 14 sec with 8 sec slack with the following tasks: 
 Task nr 0 on machine nr 1 takes 3 sec begins at earliest on t=13sec starts at 0 sec and ends at 0 sec
 Task nr 1 on machine nr 3 takes 3 sec begins at earliest on t=13sec starts at 0 sec and ends at 0 sec
@@ -619,8 +480,6 @@ Task nr 2 on machine nr 5 takes 9 sec begins at earliest on t=13sec starts at 0 
 Task nr 3 on machine nr 0 takes 10 sec begins at earliest on t=13sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 4 takes 4 sec begins at earliest on t=13sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 2 takes 1 sec begins at earliest on t=13sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 4 takes 12 sec with 10 sec slack with the following tasks: 
 Task nr 0 on machine nr 2 takes 9 sec begins at earliest on t=11sec starts at 0 sec and ends at 0 sec
 Task nr 1 on machine nr 1 takes 3 sec begins at earliest on t=11sec starts at 0 sec and ends at 0 sec
@@ -628,33 +487,25 @@ Task nr 2 on machine nr 4 takes 5 sec begins at earliest on t=11sec starts at 0 
 Task nr 3 on machine nr 5 takes 4 sec begins at earliest on t=11sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 3 sec begins at earliest on t=11sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 1 sec begins at earliest on t=11sec starts at 0 sec and ends at 0 sec
-You
 end jobloop
 updating jobs
 updating slack
 sorting by slack
 start jobloop
-Fuck
 Job nr 0 takes 22 sec with 0 sec slack with the following tasks: 
 Task nr 1 on machine nr 0 takes 3 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
 Task nr 2 on machine nr 1 takes 6 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 3 takes 7 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 5 takes 3 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 4 takes 6 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 2 takes 20 sec with 2 sec slack with the following tasks: 
 Task nr 4 on machine nr 1 takes 1 sec begins at earliest on t=13sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 4 takes 7 sec begins at earliest on t=13sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 1 takes 20 sec with 2 sec slack with the following tasks: 
 Task nr 2 on machine nr 4 takes 10 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 5 takes 10 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 10 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 4 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 4 takes 17 sec with 5 sec slack with the following tasks: 
 Task nr 0 on machine nr 2 takes 9 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
 Task nr 1 on machine nr 1 takes 3 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
@@ -662,8 +513,6 @@ Task nr 2 on machine nr 4 takes 5 sec begins at earliest on t=16sec starts at 0 
 Task nr 3 on machine nr 5 takes 4 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 3 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 1 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 5 takes 14 sec with 8 sec slack with the following tasks: 
 Task nr 0 on machine nr 1 takes 3 sec begins at earliest on t=13sec starts at 0 sec and ends at 0 sec
 Task nr 1 on machine nr 3 takes 3 sec begins at earliest on t=13sec starts at 0 sec and ends at 0 sec
@@ -671,33 +520,25 @@ Task nr 2 on machine nr 5 takes 9 sec begins at earliest on t=13sec starts at 0 
 Task nr 3 on machine nr 0 takes 10 sec begins at earliest on t=13sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 4 takes 4 sec begins at earliest on t=13sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 2 takes 1 sec begins at earliest on t=13sec starts at 0 sec and ends at 0 sec
-You
 end jobloop
 updating jobs
 updating slack
 sorting by slack
 start jobloop
-Fuck
 Job nr 0 takes 22 sec with 0 sec slack with the following tasks: 
 Task nr 1 on machine nr 0 takes 3 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
 Task nr 2 on machine nr 1 takes 6 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 3 takes 7 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 5 takes 3 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 4 takes 6 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 2 takes 20 sec with 2 sec slack with the following tasks: 
 Task nr 4 on machine nr 1 takes 1 sec begins at earliest on t=13sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 4 takes 7 sec begins at earliest on t=13sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 1 takes 20 sec with 2 sec slack with the following tasks: 
 Task nr 2 on machine nr 4 takes 10 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 5 takes 10 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 10 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 4 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 4 takes 17 sec with 5 sec slack with the following tasks: 
 Task nr 0 on machine nr 2 takes 9 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
 Task nr 1 on machine nr 1 takes 3 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
@@ -705,8 +546,6 @@ Task nr 2 on machine nr 4 takes 5 sec begins at earliest on t=16sec starts at 0 
 Task nr 3 on machine nr 5 takes 4 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 3 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 1 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 5 takes 14 sec with 8 sec slack with the following tasks: 
 Task nr 0 on machine nr 1 takes 3 sec begins at earliest on t=13sec starts at 0 sec and ends at 0 sec
 Task nr 1 on machine nr 3 takes 3 sec begins at earliest on t=13sec starts at 0 sec and ends at 0 sec
@@ -714,32 +553,24 @@ Task nr 2 on machine nr 5 takes 9 sec begins at earliest on t=13sec starts at 0 
 Task nr 3 on machine nr 0 takes 10 sec begins at earliest on t=13sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 4 takes 4 sec begins at earliest on t=13sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 2 takes 1 sec begins at earliest on t=13sec starts at 0 sec and ends at 0 sec
-You
 end jobloop
 updating jobs
 updating slack
 sorting by slack
 start jobloop
-Fuck
 Job nr 2 takes 23 sec with 0 sec slack with the following tasks: 
 Task nr 5 on machine nr 4 takes 7 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 0 takes 22 sec with 1 sec slack with the following tasks: 
 Task nr 1 on machine nr 0 takes 3 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
 Task nr 2 on machine nr 1 takes 6 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 3 takes 7 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 5 takes 3 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 4 takes 6 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 1 takes 20 sec with 3 sec slack with the following tasks: 
 Task nr 2 on machine nr 4 takes 10 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 5 takes 10 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 10 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 4 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 4 takes 17 sec with 6 sec slack with the following tasks: 
 Task nr 0 on machine nr 2 takes 9 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
 Task nr 1 on machine nr 1 takes 3 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
@@ -747,8 +578,6 @@ Task nr 2 on machine nr 4 takes 5 sec begins at earliest on t=16sec starts at 0 
 Task nr 3 on machine nr 5 takes 4 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 3 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 1 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 5 takes 15 sec with 8 sec slack with the following tasks: 
 Task nr 0 on machine nr 1 takes 3 sec begins at earliest on t=14sec starts at 0 sec and ends at 0 sec
 Task nr 1 on machine nr 3 takes 3 sec begins at earliest on t=14sec starts at 0 sec and ends at 0 sec
@@ -756,32 +585,24 @@ Task nr 2 on machine nr 5 takes 9 sec begins at earliest on t=14sec starts at 0 
 Task nr 3 on machine nr 0 takes 10 sec begins at earliest on t=14sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 4 takes 4 sec begins at earliest on t=14sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 2 takes 1 sec begins at earliest on t=14sec starts at 0 sec and ends at 0 sec
-You
 end jobloop
 updating jobs
 updating slack
 sorting by slack
 start jobloop
-Fuck
 Job nr 2 takes 23 sec with 0 sec slack with the following tasks: 
 Task nr 5 on machine nr 4 takes 7 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 0 takes 22 sec with 1 sec slack with the following tasks: 
 Task nr 1 on machine nr 0 takes 3 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
 Task nr 2 on machine nr 1 takes 6 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 3 takes 7 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 5 takes 3 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 4 takes 6 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 1 takes 20 sec with 3 sec slack with the following tasks: 
 Task nr 2 on machine nr 4 takes 10 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 5 takes 10 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 10 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 4 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 4 takes 17 sec with 6 sec slack with the following tasks: 
 Task nr 0 on machine nr 2 takes 9 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
 Task nr 1 on machine nr 1 takes 3 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
@@ -789,47 +610,35 @@ Task nr 2 on machine nr 4 takes 5 sec begins at earliest on t=16sec starts at 0 
 Task nr 3 on machine nr 5 takes 4 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 3 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 1 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 5 takes 16 sec with 7 sec slack with the following tasks: 
 Task nr 1 on machine nr 3 takes 3 sec begins at earliest on t=15sec starts at 0 sec and ends at 0 sec
 Task nr 2 on machine nr 5 takes 9 sec begins at earliest on t=15sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 0 takes 10 sec begins at earliest on t=15sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 4 takes 4 sec begins at earliest on t=15sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 2 takes 1 sec begins at earliest on t=15sec starts at 0 sec and ends at 0 sec
-You
 end jobloop
 updating jobs
 updating slack
 sorting by slack
 start jobloop
-Fuck
 Job nr 2 takes 23 sec with 0 sec slack with the following tasks: 
 Task nr 5 on machine nr 4 takes 7 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 0 takes 22 sec with 1 sec slack with the following tasks: 
 Task nr 1 on machine nr 0 takes 3 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
 Task nr 2 on machine nr 1 takes 6 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 3 takes 7 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 5 takes 3 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 4 takes 6 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 1 takes 20 sec with 3 sec slack with the following tasks: 
 Task nr 2 on machine nr 4 takes 10 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 5 takes 10 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 10 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 4 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 5 takes 20 sec with 3 sec slack with the following tasks: 
 Task nr 2 on machine nr 5 takes 9 sec begins at earliest on t=19sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 0 takes 10 sec begins at earliest on t=19sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 4 takes 4 sec begins at earliest on t=19sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 2 takes 1 sec begins at earliest on t=19sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 4 takes 17 sec with 6 sec slack with the following tasks: 
 Task nr 0 on machine nr 2 takes 9 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
 Task nr 1 on machine nr 1 takes 3 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
@@ -837,715 +646,528 @@ Task nr 2 on machine nr 4 takes 5 sec begins at earliest on t=16sec starts at 0 
 Task nr 3 on machine nr 5 takes 4 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 3 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 1 sec begins at earliest on t=16sec starts at 0 sec and ends at 0 sec
-You
 end jobloop
 updating jobs
 updating slack
 sorting by slack
 start jobloop
-Fuck
 Job nr 1 takes 27 sec with 0 sec slack with the following tasks: 
 Task nr 2 on machine nr 4 takes 10 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 5 takes 10 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 10 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 4 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 0 takes 23 sec with 4 sec slack with the following tasks: 
 Task nr 2 on machine nr 1 takes 6 sec begins at earliest on t=17sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 3 takes 7 sec begins at earliest on t=17sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 5 takes 3 sec begins at earliest on t=17sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 4 takes 6 sec begins at earliest on t=17sec starts at 0 sec and ends at 0 sec
-You
 job busy
-Fuck
 Job nr 5 takes 20 sec with 7 sec slack with the following tasks: 
 Task nr 2 on machine nr 5 takes 9 sec begins at earliest on t=19sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 0 takes 10 sec begins at earliest on t=19sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 4 takes 4 sec begins at earliest on t=19sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 2 takes 1 sec begins at earliest on t=19sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 4 takes 18 sec with 9 sec slack with the following tasks: 
 Task nr 1 on machine nr 1 takes 3 sec begins at earliest on t=17sec starts at 0 sec and ends at 0 sec
 Task nr 2 on machine nr 4 takes 5 sec begins at earliest on t=17sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 5 takes 4 sec begins at earliest on t=17sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 3 sec begins at earliest on t=17sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 1 sec begins at earliest on t=17sec starts at 0 sec and ends at 0 sec
-You
 end jobloop
 updating jobs
 updating slack
 sorting by slack
 start jobloop
-Fuck
 Job nr 1 takes 27 sec with 0 sec slack with the following tasks: 
 Task nr 2 on machine nr 4 takes 10 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 5 takes 10 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 10 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 4 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 0 takes 26 sec with 1 sec slack with the following tasks: 
 Task nr 2 on machine nr 1 takes 6 sec begins at earliest on t=20sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 3 takes 7 sec begins at earliest on t=20sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 5 takes 3 sec begins at earliest on t=20sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 4 takes 6 sec begins at earliest on t=20sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 4 takes 24 sec with 3 sec slack with the following tasks: 
 Task nr 2 on machine nr 4 takes 5 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 5 takes 4 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 3 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 1 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 5 takes 20 sec with 7 sec slack with the following tasks: 
 Task nr 2 on machine nr 5 takes 9 sec begins at earliest on t=19sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 0 takes 10 sec begins at earliest on t=19sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 4 takes 4 sec begins at earliest on t=19sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 2 takes 1 sec begins at earliest on t=19sec starts at 0 sec and ends at 0 sec
-You
 end jobloop
 updating jobs
 updating slack
 sorting by slack
 start jobloop
-Fuck
 Job nr 1 takes 27 sec with 0 sec slack with the following tasks: 
 Task nr 2 on machine nr 4 takes 10 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 5 takes 10 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 10 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 4 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 0 takes 26 sec with 1 sec slack with the following tasks: 
 Task nr 2 on machine nr 1 takes 6 sec begins at earliest on t=20sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 3 takes 7 sec begins at earliest on t=20sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 5 takes 3 sec begins at earliest on t=20sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 4 takes 6 sec begins at earliest on t=20sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 4 takes 24 sec with 3 sec slack with the following tasks: 
 Task nr 2 on machine nr 4 takes 5 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 5 takes 4 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 3 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 1 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 5 takes 20 sec with 7 sec slack with the following tasks: 
 Task nr 2 on machine nr 5 takes 9 sec begins at earliest on t=19sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 0 takes 10 sec begins at earliest on t=19sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 4 takes 4 sec begins at earliest on t=19sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 2 takes 1 sec begins at earliest on t=19sec starts at 0 sec and ends at 0 sec
-You
 end jobloop
 updating jobs
 updating slack
 sorting by slack
 start jobloop
-Fuck
 Job nr 1 takes 27 sec with 0 sec slack with the following tasks: 
 Task nr 2 on machine nr 4 takes 10 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 5 takes 10 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 10 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 4 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 0 takes 26 sec with 1 sec slack with the following tasks: 
 Task nr 2 on machine nr 1 takes 6 sec begins at earliest on t=20sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 3 takes 7 sec begins at earliest on t=20sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 5 takes 3 sec begins at earliest on t=20sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 4 takes 6 sec begins at earliest on t=20sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 4 takes 24 sec with 3 sec slack with the following tasks: 
 Task nr 2 on machine nr 4 takes 5 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 5 takes 4 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 3 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 1 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 5 takes 21 sec with 6 sec slack with the following tasks: 
 Task nr 3 on machine nr 0 takes 10 sec begins at earliest on t=20sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 4 takes 4 sec begins at earliest on t=20sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 2 takes 1 sec begins at earliest on t=20sec starts at 0 sec and ends at 0 sec
-You
 end jobloop
 updating jobs
 updating slack
 sorting by slack
 start jobloop
-Fuck
 Job nr 1 takes 27 sec with 0 sec slack with the following tasks: 
 Task nr 2 on machine nr 4 takes 10 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 5 takes 10 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 10 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 4 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 0 takes 27 sec with 0 sec slack with the following tasks: 
 Task nr 3 on machine nr 3 takes 7 sec begins at earliest on t=21sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 5 takes 3 sec begins at earliest on t=21sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 4 takes 6 sec begins at earliest on t=21sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 4 takes 24 sec with 3 sec slack with the following tasks: 
 Task nr 2 on machine nr 4 takes 5 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 5 takes 4 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 3 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 1 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 5 takes 24 sec with 3 sec slack with the following tasks: 
 Task nr 4 on machine nr 4 takes 4 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 2 takes 1 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
-You
 end jobloop
 updating jobs
 updating slack
 sorting by slack
 start jobloop
-Fuck
 Job nr 0 takes 34 sec with 0 sec slack with the following tasks: 
 Task nr 4 on machine nr 5 takes 3 sec begins at earliest on t=28sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 4 takes 6 sec begins at earliest on t=28sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 1 takes 27 sec with 7 sec slack with the following tasks: 
 Task nr 2 on machine nr 4 takes 10 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 5 takes 10 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 10 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 4 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 4 takes 24 sec with 10 sec slack with the following tasks: 
 Task nr 2 on machine nr 4 takes 5 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 5 takes 4 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 3 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 1 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 5 takes 24 sec with 10 sec slack with the following tasks: 
 Task nr 4 on machine nr 4 takes 4 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 2 takes 1 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
-You
 end jobloop
 updating jobs
 updating slack
 sorting by slack
 start jobloop
-Fuck
 Job nr 0 takes 34 sec with 0 sec slack with the following tasks: 
 Task nr 4 on machine nr 5 takes 3 sec begins at earliest on t=28sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 4 takes 6 sec begins at earliest on t=28sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 1 takes 27 sec with 7 sec slack with the following tasks: 
 Task nr 2 on machine nr 4 takes 10 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 5 takes 10 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 10 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 4 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 4 takes 24 sec with 10 sec slack with the following tasks: 
 Task nr 2 on machine nr 4 takes 5 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 5 takes 4 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 3 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 1 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 5 takes 24 sec with 10 sec slack with the following tasks: 
 Task nr 4 on machine nr 4 takes 4 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 2 takes 1 sec begins at earliest on t=23sec starts at 0 sec and ends at 0 sec
-You
 end jobloop
 updating jobs
 updating slack
 sorting by slack
 start jobloop
-Fuck
 Job nr 0 takes 34 sec with 0 sec slack with the following tasks: 
 Task nr 4 on machine nr 5 takes 3 sec begins at earliest on t=28sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 4 takes 6 sec begins at earliest on t=28sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 4 takes 34 sec with 0 sec slack with the following tasks: 
 Task nr 2 on machine nr 4 takes 5 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 5 takes 4 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 3 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 1 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 5 takes 34 sec with 0 sec slack with the following tasks: 
 Task nr 4 on machine nr 4 takes 4 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 2 takes 1 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 1 takes 32 sec with 2 sec slack with the following tasks: 
 Task nr 3 on machine nr 5 takes 10 sec begins at earliest on t=28sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 10 sec begins at earliest on t=28sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 4 sec begins at earliest on t=28sec starts at 0 sec and ends at 0 sec
-You
 end jobloop
 updating jobs
 updating slack
 sorting by slack
 start jobloop
-Fuck
 Job nr 0 takes 34 sec with 0 sec slack with the following tasks: 
 Task nr 4 on machine nr 5 takes 3 sec begins at earliest on t=28sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 4 takes 6 sec begins at earliest on t=28sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 4 takes 34 sec with 0 sec slack with the following tasks: 
 Task nr 2 on machine nr 4 takes 5 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 5 takes 4 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 3 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 1 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 5 takes 34 sec with 0 sec slack with the following tasks: 
 Task nr 4 on machine nr 4 takes 4 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 2 takes 1 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 1 takes 32 sec with 2 sec slack with the following tasks: 
 Task nr 3 on machine nr 5 takes 10 sec begins at earliest on t=28sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 10 sec begins at earliest on t=28sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 4 sec begins at earliest on t=28sec starts at 0 sec and ends at 0 sec
-You
 end jobloop
 updating jobs
 updating slack
 sorting by slack
 start jobloop
-Fuck
 Job nr 0 takes 34 sec with 0 sec slack with the following tasks: 
 Task nr 4 on machine nr 5 takes 3 sec begins at earliest on t=28sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 4 takes 6 sec begins at earliest on t=28sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 4 takes 34 sec with 0 sec slack with the following tasks: 
 Task nr 2 on machine nr 4 takes 5 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 5 takes 4 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 3 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 1 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 5 takes 34 sec with 0 sec slack with the following tasks: 
 Task nr 4 on machine nr 4 takes 4 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 2 takes 1 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 1 takes 32 sec with 2 sec slack with the following tasks: 
 Task nr 3 on machine nr 5 takes 10 sec begins at earliest on t=28sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 10 sec begins at earliest on t=28sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 4 sec begins at earliest on t=28sec starts at 0 sec and ends at 0 sec
-You
 end jobloop
 updating jobs
 updating slack
 sorting by slack
 start jobloop
-Fuck
 Job nr 0 takes 34 sec with 0 sec slack with the following tasks: 
 Task nr 4 on machine nr 5 takes 3 sec begins at earliest on t=28sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 4 takes 6 sec begins at earliest on t=28sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 4 takes 34 sec with 0 sec slack with the following tasks: 
 Task nr 2 on machine nr 4 takes 5 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 5 takes 4 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 3 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 1 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 5 takes 34 sec with 0 sec slack with the following tasks: 
 Task nr 4 on machine nr 4 takes 4 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 2 takes 1 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 1 takes 32 sec with 2 sec slack with the following tasks: 
 Task nr 3 on machine nr 5 takes 10 sec begins at earliest on t=28sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 10 sec begins at earliest on t=28sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 4 sec begins at earliest on t=28sec starts at 0 sec and ends at 0 sec
-You
 end jobloop
 updating jobs
 updating slack
 sorting by slack
 start jobloop
-Fuck
 Job nr 0 takes 34 sec with 0 sec slack with the following tasks: 
 Task nr 4 on machine nr 5 takes 3 sec begins at earliest on t=28sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 4 takes 6 sec begins at earliest on t=28sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 4 takes 34 sec with 0 sec slack with the following tasks: 
 Task nr 2 on machine nr 4 takes 5 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 5 takes 4 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 3 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 1 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 5 takes 34 sec with 0 sec slack with the following tasks: 
 Task nr 4 on machine nr 4 takes 4 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 2 takes 1 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 1 takes 32 sec with 2 sec slack with the following tasks: 
 Task nr 3 on machine nr 5 takes 10 sec begins at earliest on t=28sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 10 sec begins at earliest on t=28sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 4 sec begins at earliest on t=28sec starts at 0 sec and ends at 0 sec
-You
 end jobloop
 updating jobs
 updating slack
 sorting by slack
 start jobloop
-Fuck
 Job nr 0 takes 39 sec with 0 sec slack with the following tasks: 
 Task nr 5 on machine nr 4 takes 6 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
-You
 job busy
-Fuck
 Job nr 1 takes 35 sec with 4 sec slack with the following tasks: 
 Task nr 3 on machine nr 5 takes 10 sec begins at earliest on t=31sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 10 sec begins at earliest on t=31sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 4 sec begins at earliest on t=31sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 4 takes 34 sec with 5 sec slack with the following tasks: 
 Task nr 2 on machine nr 4 takes 5 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 5 takes 4 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 3 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 1 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 5 takes 34 sec with 5 sec slack with the following tasks: 
 Task nr 4 on machine nr 4 takes 4 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 2 takes 1 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
-You
 end jobloop
 updating jobs
 updating slack
 sorting by slack
 start jobloop
-Fuck
 Job nr 0 takes 39 sec with 0 sec slack with the following tasks: 
 Task nr 5 on machine nr 4 takes 6 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
-You
 job busy
-Fuck
 Job nr 1 takes 35 sec with 4 sec slack with the following tasks: 
 Task nr 3 on machine nr 5 takes 10 sec begins at earliest on t=31sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 10 sec begins at earliest on t=31sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 4 sec begins at earliest on t=31sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 4 takes 34 sec with 5 sec slack with the following tasks: 
 Task nr 2 on machine nr 4 takes 5 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 5 takes 4 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 3 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 1 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 5 takes 34 sec with 5 sec slack with the following tasks: 
 Task nr 4 on machine nr 4 takes 4 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 2 takes 1 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
-You
 end jobloop
 updating jobs
 updating slack
 sorting by slack
 start jobloop
-Fuck
 Job nr 0 takes 39 sec with 0 sec slack with the following tasks: 
 Task nr 5 on machine nr 4 takes 6 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 1 takes 35 sec with 4 sec slack with the following tasks: 
 Task nr 3 on machine nr 5 takes 10 sec begins at earliest on t=31sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 10 sec begins at earliest on t=31sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 4 sec begins at earliest on t=31sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 4 takes 34 sec with 5 sec slack with the following tasks: 
 Task nr 2 on machine nr 4 takes 5 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 5 takes 4 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 3 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 1 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 5 takes 34 sec with 5 sec slack with the following tasks: 
 Task nr 4 on machine nr 4 takes 4 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 2 takes 1 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
-You
 end jobloop
 updating jobs
 updating slack
 sorting by slack
 start jobloop
-Fuck
 Job nr 0 takes 39 sec with 0 sec slack with the following tasks: 
 Task nr 5 on machine nr 4 takes 6 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 1 takes 36 sec with 3 sec slack with the following tasks: 
 Task nr 4 on machine nr 0 takes 10 sec begins at earliest on t=32sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 4 sec begins at earliest on t=32sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 4 takes 34 sec with 5 sec slack with the following tasks: 
 Task nr 2 on machine nr 4 takes 5 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 5 takes 4 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 3 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 1 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 5 takes 34 sec with 5 sec slack with the following tasks: 
 Task nr 4 on machine nr 4 takes 4 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 2 takes 1 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
-You
 end jobloop
 updating jobs
 updating slack
 sorting by slack
 start jobloop
-Fuck
 Job nr 0 takes 39 sec with 0 sec slack with the following tasks: 
 Task nr 5 on machine nr 4 takes 6 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 1 takes 37 sec with 2 sec slack with the following tasks: 
 Task nr 5 on machine nr 3 takes 4 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 4 takes 34 sec with 5 sec slack with the following tasks: 
 Task nr 2 on machine nr 4 takes 5 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 5 takes 4 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 3 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 1 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 5 takes 34 sec with 5 sec slack with the following tasks: 
 Task nr 4 on machine nr 4 takes 4 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 2 takes 1 sec begins at earliest on t=33sec starts at 0 sec and ends at 0 sec
-You
 end jobloop
 updating jobs
 updating slack
 sorting by slack
 start jobloop
-Fuck
 Job nr 4 takes 40 sec with 0 sec slack with the following tasks: 
 Task nr 2 on machine nr 4 takes 5 sec begins at earliest on t=39sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 5 takes 4 sec begins at earliest on t=39sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 3 sec begins at earliest on t=39sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 1 sec begins at earliest on t=39sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 5 takes 40 sec with 0 sec slack with the following tasks: 
 Task nr 4 on machine nr 4 takes 4 sec begins at earliest on t=39sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 2 takes 1 sec begins at earliest on t=39sec starts at 0 sec and ends at 0 sec
-You
 end jobloop
 updating jobs
 updating slack
 sorting by slack
 start jobloop
-Fuck
 Job nr 4 takes 40 sec with 0 sec slack with the following tasks: 
 Task nr 2 on machine nr 4 takes 5 sec begins at earliest on t=39sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 5 takes 4 sec begins at earliest on t=39sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 3 sec begins at earliest on t=39sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 1 sec begins at earliest on t=39sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 5 takes 40 sec with 0 sec slack with the following tasks: 
 Task nr 4 on machine nr 4 takes 4 sec begins at earliest on t=39sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 2 takes 1 sec begins at earliest on t=39sec starts at 0 sec and ends at 0 sec
-You
 end jobloop
 updating jobs
 updating slack
 sorting by slack
 start jobloop
-Fuck
 Job nr 4 takes 40 sec with 0 sec slack with the following tasks: 
 Task nr 2 on machine nr 4 takes 5 sec begins at earliest on t=39sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 5 takes 4 sec begins at earliest on t=39sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 3 sec begins at earliest on t=39sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 1 sec begins at earliest on t=39sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 5 takes 40 sec with 0 sec slack with the following tasks: 
 Task nr 4 on machine nr 4 takes 4 sec begins at earliest on t=39sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 2 takes 1 sec begins at earliest on t=39sec starts at 0 sec and ends at 0 sec
-You
 end jobloop
 updating jobs
 updating slack
 sorting by slack
 start jobloop
-Fuck
 Job nr 4 takes 40 sec with 0 sec slack with the following tasks: 
 Task nr 2 on machine nr 4 takes 5 sec begins at earliest on t=39sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 5 takes 4 sec begins at earliest on t=39sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 3 sec begins at earliest on t=39sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 1 sec begins at earliest on t=39sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 5 takes 40 sec with 0 sec slack with the following tasks: 
 Task nr 4 on machine nr 4 takes 4 sec begins at earliest on t=39sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 2 takes 1 sec begins at earliest on t=39sec starts at 0 sec and ends at 0 sec
-You
 end jobloop
 updating jobs
 updating slack
 sorting by slack
 start jobloop
-Fuck
 Job nr 4 takes 40 sec with 0 sec slack with the following tasks: 
 Task nr 2 on machine nr 4 takes 5 sec begins at earliest on t=39sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 5 takes 4 sec begins at earliest on t=39sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 3 sec begins at earliest on t=39sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 1 sec begins at earliest on t=39sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 5 takes 40 sec with 0 sec slack with the following tasks: 
 Task nr 4 on machine nr 4 takes 4 sec begins at earliest on t=39sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 2 takes 1 sec begins at earliest on t=39sec starts at 0 sec and ends at 0 sec
-You
 end jobloop
 updating jobs
 updating slack
 sorting by slack
 start jobloop
-Fuck
 Job nr 4 takes 40 sec with 0 sec slack with the following tasks: 
 Task nr 2 on machine nr 4 takes 5 sec begins at earliest on t=39sec starts at 0 sec and ends at 0 sec
 Task nr 3 on machine nr 5 takes 4 sec begins at earliest on t=39sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 3 sec begins at earliest on t=39sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 1 sec begins at earliest on t=39sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 5 takes 40 sec with 0 sec slack with the following tasks: 
 Task nr 4 on machine nr 4 takes 4 sec begins at earliest on t=39sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 2 takes 1 sec begins at earliest on t=39sec starts at 0 sec and ends at 0 sec
-You
 end jobloop
 updating jobs
 updating slack
 sorting by slack
 start jobloop
-Fuck
 Job nr 5 takes 45 sec with 0 sec slack with the following tasks: 
 Task nr 4 on machine nr 4 takes 4 sec begins at earliest on t=44sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 2 takes 1 sec begins at earliest on t=44sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 4 takes 42 sec with 3 sec slack with the following tasks: 
 Task nr 3 on machine nr 5 takes 4 sec begins at earliest on t=41sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 3 sec begins at earliest on t=41sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 1 sec begins at earliest on t=41sec starts at 0 sec and ends at 0 sec
-You
 job busy
 end jobloop
 updating jobs
 updating slack
 sorting by slack
 start jobloop
-Fuck
 Job nr 5 takes 45 sec with 0 sec slack with the following tasks: 
 Task nr 4 on machine nr 4 takes 4 sec begins at earliest on t=44sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 2 takes 1 sec begins at earliest on t=44sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 4 takes 42 sec with 3 sec slack with the following tasks: 
 Task nr 3 on machine nr 5 takes 4 sec begins at earliest on t=41sec starts at 0 sec and ends at 0 sec
 Task nr 4 on machine nr 0 takes 3 sec begins at earliest on t=41sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 1 sec begins at earliest on t=41sec starts at 0 sec and ends at 0 sec
-You
 end jobloop
 updating jobs
 updating slack
 sorting by slack
 start jobloop
-Fuck
 Job nr 5 takes 45 sec with 0 sec slack with the following tasks: 
 Task nr 4 on machine nr 4 takes 4 sec begins at earliest on t=44sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 2 takes 1 sec begins at earliest on t=44sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 4 takes 43 sec with 2 sec slack with the following tasks: 
 Task nr 4 on machine nr 0 takes 3 sec begins at earliest on t=42sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 3 takes 1 sec begins at earliest on t=42sec starts at 0 sec and ends at 0 sec
-You
 end jobloop
 updating jobs
 updating slack
 sorting by slack
 start jobloop
-Fuck
 Job nr 5 takes 45 sec with 0 sec slack with the following tasks: 
 Task nr 4 on machine nr 4 takes 4 sec begins at earliest on t=44sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 2 takes 1 sec begins at earliest on t=44sec starts at 0 sec and ends at 0 sec
-You
-Fuck
 Job nr 4 takes 44 sec with 1 sec slack with the following tasks: 
 Task nr 5 on machine nr 3 takes 1 sec begins at earliest on t=43sec starts at 0 sec and ends at 0 sec
-You
 end jobloop
 updating jobs
 updating slack
 sorting by slack
 start jobloop
-Fuck
 Job nr 5 takes 45 sec with 0 sec slack with the following tasks: 
 Task nr 4 on machine nr 4 takes 4 sec begins at earliest on t=44sec starts at 0 sec and ends at 0 sec
 Task nr 5 on machine nr 2 takes 1 sec begins at earliest on t=44sec starts at 0 sec and ends at 0 sec
-You
 end jobloop
 updating jobs
 updating slack
 sorting by slack
 start jobloop
-Fuck
 Job nr 5 takes 46 sec with 0 sec slack with the following tasks: 
 Task nr 5 on machine nr 2 takes 1 sec begins at earliest on t=45sec starts at 0 sec and ends at 0 sec
-You
 job busy
 end jobloop
 updating jobs
 updating slack
 sorting by slack
 start jobloop
-Fuck
 Job nr 5 takes 47 sec with 0 sec slack with the following tasks: 
 Task nr 5 on machine nr 2 takes 1 sec begins at earliest on t=46sec starts at 0 sec and ends at 0 sec
-You
 job busy
 end jobloop
 updating jobs
 updating slack
 sorting by slack
 start jobloop
-Fuck
 Job nr 5 takes 48 sec with 0 sec slack with the following tasks: 
 Task nr 5 on machine nr 2 takes 1 sec begins at earliest on t=47sec starts at 0 sec and ends at 0 sec
-You
 job busy
 end jobloop
 updating jobs
 updating slack
 sorting by slack
 start jobloop
-Fuck
 Job nr 5 takes 49 sec with 0 sec slack with the following tasks: 
 Task nr 5 on machine nr 2 takes 1 sec begins at earliest on t=48sec starts at 0 sec and ends at 0 sec
-You
 end jobloop
 updating jobs
 updating slack
