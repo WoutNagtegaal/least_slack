@@ -40,6 +40,8 @@ public:
 
 	void update();
 
+	Job& operator=(const Job &rhs);
+
 	virtual ~Job();
 
 private:

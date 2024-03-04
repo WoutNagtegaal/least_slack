@@ -57,10 +57,7 @@ bool Job::startNextTask(unsigned short currentTime) {
 }
 
 void Job::sortTasksByTaskId() {
-	auto taskIdSort = [](const Task &a, const Task &b) {
-		return a.getTaskId() < b.getTaskId();
-	};
-	std::sort(this->tasks.begin(), this->tasks.end(), taskIdSort);
+	std::sort(this->tasks.begin(), this->tasks.end());
 }
 
 bool Job::jobDone(unsigned short currentTime) {
@@ -94,7 +91,7 @@ bool Job::jobBusy(unsigned short currentTime) {
 }
 
 void Job::printEndResult() {
-	std::cout << tasks[0].getStartTime() << " "
+	std::cout << tasks[0].getStartTime() << "\t"
 			<< tasks[tasks.size() - 1].getEndTime() << std::endl;
 }
 
@@ -121,6 +118,16 @@ void Job::calculateEarliestStartTimes(unsigned short currentTime) {
 }
 
 void Job::update() {
+}
+
+Job& Job::operator =(const Job &rhs) {
+	if(this != &rhs) {
+		this->duration = rhs.duration;
+		this->jobId = rhs.jobId;
+		this->slack = rhs.slack;
+		this->tasks = rhs.tasks;
+	}
+	return *this;
 }
 
 unsigned short Job::calculateEarliestStartTime(Task &task) {

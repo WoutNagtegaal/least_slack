@@ -31,6 +31,7 @@ public:
 
 	// bool operator==(const Task &rhs);
 	Task& operator=(const Task &rhs);
+	bool operator<(const Task &rhs) const;
 
 	void setEarliestStartTime(unsigned short earliestStartTime);
 	void setStartTime(unsigned short startTime);

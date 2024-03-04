@@ -95,6 +95,10 @@ Task& Task::operator=(const Task &rhs) {
 	return *this;
 }
 
+bool Task::operator <(const Task &rhs) const {
+	return this->taskId < rhs.taskId;
+}
+
 Task::~Task() {
 }
 

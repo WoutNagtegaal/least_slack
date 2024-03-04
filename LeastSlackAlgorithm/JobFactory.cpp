@@ -97,7 +97,7 @@ void JobFactory::printEndResults() {
 	};
 	std::sort(finishedJobs.begin(), finishedJobs.end(), sort);
 	for (Job &j : finishedJobs) {
-		std::cout << j.getJobId() << " ";
+		std::cout << j.getJobId() << "\t";
 		j.printEndResult();
 	}
 }
