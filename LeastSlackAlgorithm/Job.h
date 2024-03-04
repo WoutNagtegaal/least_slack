@@ -38,8 +38,6 @@ public:
 
 	unsigned short getSlack() const;
 
-	void update();
-
 	Job& operator=(const Job &rhs);
 
 	virtual ~Job();

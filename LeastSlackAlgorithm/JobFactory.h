@@ -25,6 +25,7 @@ public:
 	JobFactory(const ConfigReader &rhs);
 
 	void initJobs(std::vector<std::vector<unsigned short>> config);
+	void initMachines();
 	void calculateSlack();
 	void sortJobsByJobId();
 	void sortJobsBySlack();

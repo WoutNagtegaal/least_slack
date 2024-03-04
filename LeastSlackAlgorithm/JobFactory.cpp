@@ -17,14 +17,12 @@ JobFactory::JobFactory(unsigned short nMachines, unsigned short nJobs,
 	// don't save the config vector directly
 	// we want to save it into the correct classes
 	this->initJobs(config);
-	for (int i = 0; i < nMachines; i++) {
-		machines.push_back(Machine());
-	}
+	this->initMachines();
 }
 
 JobFactory::JobFactory(const JobFactory &rhs) :
 		nMachines(rhs.nMachines), nJobs(rhs.nJobs), currentTime(0), jobs(
-				rhs.jobs) {
+				rhs.jobs), machines(rhs.machines) {
 }
 
 JobFactory::JobFactory(const ConfigReader &rhs) {
@@ -33,9 +31,7 @@ JobFactory::JobFactory(const ConfigReader &rhs) {
 	this->nMachines = rhs.getNMachines();
 	this->nJobs = rhs.getNJobs();
 	this->initJobs(rhs.getConfigValues());
-	for (int i = 0; i < nMachines; i++) {
-		machines.push_back(Machine());
-	}
+	this->initMachines();
 }
 
 void JobFactory::initJobs(std::vector<std::vector<unsigned short> > config) {
@@ -44,6 +40,12 @@ void JobFactory::initJobs(std::vector<std::vector<unsigned short> > config) {
 	for (auto job : config) {
 		this->jobs.push_back(Job(id, job));
 		id++;
+	}
+}
+
+void JobFactory::initMachines() {
+	for (int i = 0; i < nMachines; i++) {
+		machines.push_back(Machine());
 	}
 }
 
@@ -66,9 +68,7 @@ void JobFactory::calculateSlack() {
 		if (current.taskDone(currentTime))
 			continue;
 		unsigned short machineNr = current.getMachineNr();
-		if (j.jobBusy(currentTime)) {
-			j.calculateEarliestStartTimes(currentTime);
-		} else if (machines[machineNr].machineBusy(currentTime)) {
+		if (machines[machineNr].machineBusy(currentTime)) {
 			j.calculateEarliestStartTimes(machines[machineNr].getFreeFrom());
 		} else {
 			j.calculateEarliestStartTimes(currentTime);
