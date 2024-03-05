@@ -33,8 +33,8 @@ public:
 	bool startNextTask(unsigned short startTime);
 
 	// can't be const, the next task will be started (starttime set)
-	// because of this i made it private, so it will at least not be altered from outside
 	Task& getNextTask();
+	const Task& getCurrentTask(unsigned short currentTime);
 
 	unsigned short getSlack() const;
 

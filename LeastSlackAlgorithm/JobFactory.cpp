@@ -64,6 +64,7 @@ void JobFactory::sortJobsByJobId() {
 void JobFactory::calculateSlack() {
 	// preparation for the slack calculation
 	for (Job &j : this->jobs) {
+		if(j.jobBusy(currentTime)) continue;
 		Task &current = j.getNextTask();
 		if (current.taskDone(currentTime))
 			continue;
@@ -128,9 +129,6 @@ void JobFactory::schedule() {
 		this->calculateSlack();
 		this->sortJobsBySlack();
 
-		std::cout << "----------------------------------------------"
-				<< std::endl;
-
 		for (Job &j : jobs) {
 			if (j.jobBusy(currentTime)) {
 				continue;
@@ -138,8 +136,6 @@ void JobFactory::schedule() {
 			Task &current = j.getNextTask();
 			unsigned short duration = current.getDuration();
 			unsigned short machineNr = current.getMachineNr();
-//			std::cout << j;
-			std::cout << "Slack: " << j.getSlack() << std::endl;
 			if (!machines[machineNr].machineBusy(currentTime)) {
 				j.startNextTask(currentTime);
 				machines[machineNr].startMachine(currentTime, duration);
