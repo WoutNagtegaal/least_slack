@@ -16,6 +16,10 @@ Job::Job() :
 
 Job::Job(unsigned short jobId, std::vector<unsigned short> config) :
 		jobId(jobId), duration(0), slack(0) {
+	// Tasks accept at first the ID, then the machine nr and last the duration
+	// in the config no ID is stored, so this is the iterator
+	// afterwards each task is stored in a pair of machine nr - duration
+	// this is why i is increased by 2 each time and the ID is divided by 2
 	for (unsigned short i = 0; i < config.size(); i += 2) {
 		tasks.push_back(Task(i / 2, config[i], config[i + 1]));
 	}
@@ -27,43 +31,49 @@ Job::Job(const Job &rhs) :
 }
 
 bool Job::startNextTask(unsigned short currentTime) {
+	// some checks if the job is already done
+	// a finished job can of course not be started
 	if (!this->taskAvailable()) {
 		return false;
 	}
-//	std::cout << "start next task...." << std::endl;
 	if (this->jobDone(currentTime)) {
 		return false;
 	}
+	// getNextTask() returns the last task if no next task is found because a task must!!! be returned
+	// this is why I check if this task is already started
 	Task &nextTask = this->getNextTask();
 	if (nextTask.taskStarted()) {
 		return false;
 	}
 	nextTask.startTask(currentTime);
-//	std::cout << nextTask;
 	return true;
 }
 
 Task& Job::getNextTask() {
+	// sort the tasks so I will get the actual first task
 	this->sortTasksByTaskId();
 	auto taskDone = [](const Task &t) {
 		return !t.taskStarted();
 	};
 	auto next = std::find_if(tasks.begin(), tasks.end(), taskDone);
+	// if there is a task found that task can be returned
 	if (next != tasks.end()) {
 		return *next;
 	}
+	// if no task is found however the last task is returned.
+	// using references it isn't possible to return NULL like with c pointers
+	// so I had to return something, and this seemed the most logical
+	// using this task it can be checked if the job has started, so at least the calling function can validate
+	// didn't want to just return next directly as that may lead do undefined behaviour
 	return tasks[tasks.size() - 1];
 }
 
 void Job::calculateDuration() {
-// the last task to be executed can be used to calculate the total duration
-// this task is the last, so when this task is done the complete job is done
-//	auto taskLastId = [](const Task &a, const Task &b) {
-//		return a.getTaskId() < b.getTaskId();
-//	};
-//	auto lastTask = std::max_element(tasks.begin(), tasks.end(), taskLastId);
+	// the last task to be executed can be used to calculate the total duration
+	// this task is the last, so when this task is done the complete job is done
+	// first I sort them. again....
 	this->sortTasksByTaskId();
-	auto lastTask = tasks.end() - 1;
+	auto lastTask = tasks.end() - 1; // the task before end() is always the last
 	this->duration = lastTask->getDuration() + lastTask->getEarliestStartTime();
 }
 
@@ -79,8 +89,8 @@ void Job::printEndResult() {
 }
 
 void Job::calculateEarliestStartTimes(unsigned short currentTime) {
-// sorting all task by taskId to loop in the right order
-// otherwise the earliest starttime of the previous task will not have been set
+	// sorting all task by taskId to loop in the right order
+	// otherwise the earliest starttime of the previous task will not have been set
 	if (!this->taskAvailable())
 		return;
 	this->sortTasksByTaskId();
@@ -100,21 +110,14 @@ void Job::calculateEarliestStartTimes(unsigned short currentTime) {
 	}
 }
 
-bool Job::operator <(const Job &rhs) const {
-	if (this->slack != rhs.slack) {
-		return this->slack < rhs.slack;
-	}
-	return this->jobId < rhs.jobId;
-}
-
 unsigned short Job::calculateEarliestStartTime(Task &task) {
-// we want the task before the current task to read the duration and earliest start time
-// these can be added together to get the earliest start time of the current task
+	// I want the task before the current task to read the duration and earliest start time
+	// these can be added together to get the earliest start time of the current task
 	auto getPreviousTask = [task](const Task &a) {
 		return a.getTaskId() == ((task.getTaskId()) - 1);
 	};
 	auto prev = std::find_if(tasks.begin(), tasks.end(), getPreviousTask);
-	if (prev == tasks.end())
+	if (prev == tasks.end()) // if no task is found I rather stupidly assume it is the first
 		return 0;
 	return (prev->getEarliestStartTime() + prev->getDuration());
 }
@@ -125,6 +128,7 @@ bool Job::jobDone(unsigned short currentTime) {
 			return false;
 		}
 	}
+	// if all tasks are done the job is also done
 	return true;
 }
 
@@ -134,6 +138,7 @@ bool Job::taskAvailable() {
 			return true;
 		}
 	}
+	// if all tasks have started already there is no task left to execute
 	return false;
 }
 
@@ -143,6 +148,7 @@ bool Job::jobBusy(unsigned short currentTime) {
 			return true;
 		}
 	}
+	// if no task is busy the job is also not busy
 	return false;
 }
 
@@ -154,6 +160,15 @@ Job& Job::operator =(const Job &rhs) {
 		this->tasks = rhs.tasks;
 	}
 	return *this;
+}
+
+bool Job::operator <(const Job &rhs) const {
+	// at first I want to sort by slack, if both slacks are the same I sort by job ID instead
+	// otherwise I won't get the exact same order as the teacher
+	if (this->slack != rhs.slack) {
+		return this->slack < rhs.slack;
+	}
+	return this->jobId < rhs.jobId;
 }
 
 void Job::sortTasksByTaskId() {

@@ -20,6 +20,8 @@ JobFactory::JobFactory(unsigned short nMachines, unsigned short nJobs,
 	this->initMachines();
 }
 
+// this one exists mostly because i first wanted to make a vector with jobfactories
+// so i could execute multiple files at once
 JobFactory::JobFactory(const JobFactory &rhs) :
 		nMachines(rhs.nMachines), nJobs(rhs.nJobs), currentTime(0), jobs(
 				rhs.jobs), machines(rhs.machines) {
@@ -38,18 +40,22 @@ void JobFactory::initJobs(std::vector<std::vector<unsigned short> > config) {
 	// id is decided by location in the vector, so we have to keep track of it manually
 	unsigned short id = 0;
 	for (auto job : config) {
+		// each row of the vector contains a job
 		this->jobs.push_back(Job(id, job));
 		id++;
 	}
 }
 
 void JobFactory::initMachines() {
+	// the machine ID is just the location in the vector
+	// no need to make it more complicated than necessary
 	for (int i = 0; i < nMachines; i++) {
 		machines.push_back(Machine());
 	}
 }
 
 bool JobFactory::allJobsDone() {
+	// when all jobs are moved to the finished job vector the task is done
 	return jobs.size() == 0;
 }
 
@@ -64,12 +70,14 @@ void JobFactory::sortJobsByJobId() {
 void JobFactory::calculateSlack() {
 	// preparation for the slack calculation
 	for (Job &j : this->jobs) {
+		// busy jobs already have the correct values saved, so they don't have
+		// to be updated every time
 		if (j.jobBusy(currentTime))
 			continue;
 		Task &current = j.getNextTask();
-		if (current.taskDone(currentTime))
-			continue;
+
 		unsigned short machineNr = current.getMachineNr();
+		// tasks that use an already busy machine cannot be executed until it is free
 		if (machines[machineNr].machineBusy(currentTime)) {
 			j.calculateEarliestStartTimes(machines[machineNr].getFreeFrom());
 		} else {
@@ -81,7 +89,6 @@ void JobFactory::calculateSlack() {
 	unsigned short longestJobDuration = this->getLongestJobDuration();
 	for (Job &j : this->jobs) {
 		j.calculateSlack(longestJobDuration);
-//		std::cout << j;
 	}
 }
 
@@ -91,6 +98,7 @@ void JobFactory::sortJobsBySlack() {
 }
 
 void JobFactory::printEndResults() {
+	// print the finished job in order of job id, else checks will fail
 	auto sort = [](const Job &a, const Job &b) {
 		return a.getJobId() < b.getJobId();
 	};
@@ -102,6 +110,7 @@ void JobFactory::printEndResults() {
 }
 
 void JobFactory::removeFinishedJobs() {
+	// it is unnecessary to loop over already finished jobs, so we save them in a separate vector
 	for (auto j = jobs.begin(); j < jobs.end();) {
 		if (j->jobDone(currentTime)) {
 			finishedJobs.push_back(*j);
@@ -121,12 +130,12 @@ unsigned short JobFactory::getLongestJobDuration() {
 }
 
 void JobFactory::schedule() {
-	bool done = false;
-	while (!done) {
+	while (!allJobsDone()) {
 		this->removeFinishedJobs();
 		this->calculateSlack();
 		this->sortJobsBySlack();
 
+		// update every job, not const because a new task will possibly start
 		for (Job &j : jobs) {
 			if (j.jobBusy(currentTime)) {
 				continue;
@@ -134,6 +143,7 @@ void JobFactory::schedule() {
 			Task &current = j.getNextTask();
 			unsigned short duration = current.getDuration();
 			unsigned short machineNr = current.getMachineNr();
+			// if a machine is already busy another task cannot be started
 			if (!machines[machineNr].machineBusy(currentTime)) {
 				j.startNextTask(currentTime);
 				machines[machineNr].startMachine(currentTime, duration);
@@ -141,9 +151,6 @@ void JobFactory::schedule() {
 		}
 
 		++currentTime;
-		if (allJobsDone()) {
-			done = true;
-		}
 	}
 }
 
