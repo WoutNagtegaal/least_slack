@@ -64,7 +64,8 @@ void JobFactory::sortJobsByJobId() {
 void JobFactory::calculateSlack() {
 	// preparation for the slack calculation
 	for (Job &j : this->jobs) {
-		if(j.jobBusy(currentTime)) continue;
+		if (j.jobBusy(currentTime))
+			continue;
 		Task &current = j.getNextTask();
 		if (current.taskDone(currentTime))
 			continue;
@@ -87,7 +88,10 @@ void JobFactory::calculateSlack() {
 void JobFactory::sortJobsBySlack() {
 	// sorts jobs by slack to decide the next task
 	auto jobSlackSort = [](const Job &a, const Job &b) {
-		return a.getSlack() < b.getSlack();
+		if (a.getSlack() != b.getSlack()) {
+			return a.getSlack() < b.getSlack();
+		}
+		return a.getJobId() < b.getJobId();
 	};
 	std::sort(jobs.begin(), jobs.end(), jobSlackSort);
 }

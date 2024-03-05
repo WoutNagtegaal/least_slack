@@ -39,7 +39,7 @@ bool Job::startNextTask(unsigned short currentTime) {
 		return false;
 	}
 	nextTask.startTask(currentTime);
-	std::cout << nextTask;
+//	std::cout << nextTask;
 	return true;
 }
 
