@@ -34,11 +34,11 @@ public:
 
 	// can't be const, the next task will be started (starttime set)
 	Task& getNextTask();
-	const Task& getCurrentTask(unsigned short currentTime);
 
 	unsigned short getSlack() const;
 
 	Job& operator=(const Job &rhs);
+	bool operator<(const Job &rhs) const;
 
 	virtual ~Job();
 

@@ -55,13 +55,6 @@ Task& Job::getNextTask() {
 	return tasks[tasks.size() - 1];
 }
 
-const Task& Job::getCurrentTask(unsigned short currentTime) {
-	for (const Task &t : tasks) {
-		if(t.taskBusy(currentTime)) return t;
-	}
-	return this->getNextTask();
-}
-
 void Job::calculateDuration() {
 // the last task to be executed can be used to calculate the total duration
 // this task is the last, so when this task is done the complete job is done
@@ -105,6 +98,13 @@ void Job::calculateEarliestStartTimes(unsigned short currentTime) {
 		}
 		t->setEarliestStartTime(calculateEarliestStartTime(*t));
 	}
+}
+
+bool Job::operator <(const Job &rhs) const {
+	if (this->slack != rhs.slack) {
+		return this->slack < rhs.slack;
+	}
+	return this->jobId < rhs.jobId;
 }
 
 unsigned short Job::calculateEarliestStartTime(Task &task) {
