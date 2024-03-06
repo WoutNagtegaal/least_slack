@@ -75,14 +75,6 @@ void Task::setEarliestStartTime(unsigned short earliestStartTime) {
 	this->earliestStartTime = earliestStartTime;
 }
 
-void Task::setStartTime(unsigned short startTime) {
-	this->startTime = startTime;
-}
-
-void Task::setEndTime(unsigned short endTime) {
-	this->endTime = endTime;
-}
-
 Task& Task::operator=(const Task &rhs) {
 	if (this != &rhs) {
 		taskId = rhs.taskId;

@@ -34,8 +34,6 @@ public:
 	bool operator<(const Task &rhs) const;
 
 	void setEarliestStartTime(unsigned short earliestStartTime);
-	void setStartTime(unsigned short startTime);
-	void setEndTime(unsigned short endTime);
 
 	virtual ~Task();
 
