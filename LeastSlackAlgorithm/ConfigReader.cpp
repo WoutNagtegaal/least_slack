@@ -36,6 +36,7 @@ bool ConfigReader::readConfig() {
 	// create a string that all lines will be read into
 	std::string jobLine;
 	while (std::getline(this->configFile, jobLine)) {
+		// creating
 		std::istringstream jobStream(jobLine);
 		unsigned short value;
 		std::vector<unsigned short> currentJob;
@@ -47,6 +48,7 @@ bool ConfigReader::readConfig() {
 		if (!currentJob.empty()) {
 			configValues.push_back(currentJob);
 		}
+		if (configValues.size() >= this->nJobs) break;
 	}
 	return true;
 }
