@@ -36,10 +36,14 @@ bool ConfigReader::readConfig() {
 	// create a string that all lines will be read into
 	std::string jobLine;
 	while (std::getline(this->configFile, jobLine)) {
-		// creating
+		// creating a string string out of the current job line
+		// this can be used to loop over all separate values in the string
 		std::istringstream jobStream(jobLine);
 		unsigned short value;
 		std::vector<unsigned short> currentJob;
+		// looping over all values in the jobline
+		// for now I just push them into a vector, further handling of the values
+		// will be done by the JobFactory
 		while (jobStream >> value) {
 			currentJob.push_back(value);
 		}
@@ -48,7 +52,11 @@ bool ConfigReader::readConfig() {
 		if (!currentJob.empty()) {
 			configValues.push_back(currentJob);
 		}
-		if (configValues.size() >= this->nJobs) break;
+		// if there are more jobs in the config that specified at the top
+		// stop reading them
+		if (configValues.size() >= this->nJobs) {
+			break;
+		}
 	}
 	return true;
 }
@@ -57,6 +65,7 @@ void ConfigReader::readFirstLine() {
 	if (!this->fileFound()) {
 		return;
 	}
+	// first line contains two values: first the number of jobs and then the number of machines
 	this->configFile >> this->nJobs >> this->nMachines;
 }
 
@@ -80,8 +89,8 @@ ConfigReader::~ConfigReader() {
 }
 
 std::ostream& operator <<(std::ostream &os, const ConfigReader &configReader) {
-	os << "Jobs: " << configReader.getNJobs() << " Machines: " << configReader.getNMachines()
-			<< std::endl;
+	os << "Jobs: " << configReader.getNJobs() << " Machines: "
+			<< configReader.getNMachines() << std::endl;
 	for (std::vector<unsigned short> jobs : configReader.getConfigValues()) {
 		for (unsigned short task : jobs) {
 			std::cout << task << ' ';
