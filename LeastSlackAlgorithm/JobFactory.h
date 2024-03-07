@@ -9,6 +9,7 @@
 #define JOBFACTORY_H_
 
 #include <vector>
+#include <set>
 
 #include "Job.h"
 #include "ConfigReader.h"
@@ -52,6 +53,7 @@ private:
 	std::vector<Job> jobs;
 	std::vector<Job> finishedJobs;
 	std::vector<Machine> machines;
+	std::set<unsigned short> earliestTimes;
 
 };
 
