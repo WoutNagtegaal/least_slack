@@ -14,7 +14,7 @@
 class Job {
 public:
 	Job();
-	Job(unsigned short jobId, std::vector<unsigned short> config);
+	Job(unsigned short jobId, const std::vector<unsigned short> &config);
 	Job(const Job &rhs);
 
 	void calculateEarliestStartTimes(unsigned short currentTime);
@@ -43,7 +43,6 @@ public:
 	virtual ~Job();
 
 private:
-
 	unsigned short calculateEarliestStartTime(Task &task);
 
 	unsigned short jobId;

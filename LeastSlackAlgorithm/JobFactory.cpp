@@ -12,7 +12,7 @@
 #include <algorithm>
 
 JobFactory::JobFactory(unsigned short nMachines, unsigned short nJobs,
-		std::vector<std::vector<unsigned short>> config) :
+		const std::vector<std::vector<unsigned short>> &config) :
 		nMachines(nMachines), nJobs(nJobs), currentTime(0) {
 	// don't save the config vector directly
 	// we want to save it into the correct classes
@@ -36,13 +36,14 @@ JobFactory::JobFactory(const ConfigReader &rhs) {
 	this->initMachines();
 }
 
-void JobFactory::initJobs(std::vector<std::vector<unsigned short> > config) {
+void JobFactory::initJobs(
+		const std::vector<std::vector<unsigned short>> &config) {
 	// id is decided by location in the vector, so we have to keep track of it manually
 	unsigned short id = 0;
-	for (auto job : config) {
+	for (const std::vector<unsigned short> &job : config) {
 		// each row of the vector contains a job
 		this->jobs.push_back(Job(id, job));
-		id++;
+		++id;
 	}
 }
 
@@ -69,6 +70,7 @@ void JobFactory::sortJobsByJobId() {
 
 void JobFactory::calculateSlack() {
 	// preparation for the slack calculation
+	// is also not const, the earliest start times and slack will be written
 	for (Job &j : this->jobs) {
 		// busy jobs already have the correct values saved, so they don't have
 		// to be updated every time

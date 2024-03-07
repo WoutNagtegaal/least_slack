@@ -20,11 +20,11 @@ class JobFactory {
 public:
 	JobFactory() = delete;
 	JobFactory(unsigned short nMachines, unsigned short nJobs,
-			std::vector<std::vector<unsigned short>> config);
+			const std::vector<std::vector<unsigned short>> &config);
 	JobFactory(const JobFactory &rhs);
 	JobFactory(const ConfigReader &rhs);
 
-	void initJobs(std::vector<std::vector<unsigned short>> config);
+	void initJobs(const std::vector<std::vector<unsigned short>> &config);
 	void initMachines();
 	void calculateSlack();
 	void sortJobsByJobId();

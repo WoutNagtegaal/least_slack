@@ -14,7 +14,7 @@ Job::Job() :
 		jobId(0), duration(0), slack(0) {
 }
 
-Job::Job(unsigned short jobId, std::vector<unsigned short> config) :
+Job::Job(unsigned short jobId, const std::vector<unsigned short> &config) :
 		jobId(jobId), duration(0), slack(0) {
 	// Tasks accept at first the ID, then the machine nr and last the duration
 	// in the config no ID is stored, so this is the iterator
