@@ -54,11 +54,10 @@ bool ConfigReader::readConfig() {
 		}
 		// if there are more jobs in the config that specified at the top
 		// stop reading them
-//		if (configValues.size() >= this->nJobs) {
-//			break;
-//		}
-		// currently commented out because the testrun the teacher did worked without the check
-		// so i'm not sure if this will break it
+		if (configValues.size() >= this->nJobs) {
+			break;
+		}
+
 	}
 	return true;
 }
