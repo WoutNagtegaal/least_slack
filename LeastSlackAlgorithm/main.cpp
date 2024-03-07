@@ -8,6 +8,9 @@
 #include "Job.h"
 #include "JobFactory.h"
 
+#include <chrono>
+unsigned long long millis();
+
 int main(int argc, char **argv) {
 	// check if there were any arguments filled in from the command line
 	if (argc < 2) {
@@ -26,8 +29,18 @@ int main(int argc, char **argv) {
 	// this saves having to read all getter functions everytime a jobfactory is made
 	JobFactory jobFactory(config);
 
+	unsigned long long start = millis();
+
 	jobFactory.schedule();
+
+	std::cout << millis() - start << std::endl;
 
 	jobFactory.printEndResults();
 	return 0;
+}
+
+unsigned long long millis() {
+	auto now = std::chrono::system_clock::now();
+	return std::chrono::duration_cast<std::chrono::milliseconds>(
+			now.time_since_epoch()).count();
 }
