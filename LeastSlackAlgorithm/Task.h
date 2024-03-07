@@ -29,7 +29,7 @@ public:
 	unsigned short getStartTime() const;
 	unsigned short getEndTime() const;
 
-	// bool operator==(const Task &rhs);
+	bool operator==(const Task &rhs);
 	Task& operator=(const Task &rhs);
 	bool operator<(const Task &rhs) const;
 

@@ -94,10 +94,9 @@ void Job::calculateEarliestStartTimes(unsigned short currentTime) {
 	if (!this->taskAvailable())
 		return;
 	this->sortTasksByTaskId();
-	auto taskDone = [](const Task &t) {
-		return !t.taskStarted();
-	};
-	auto next = std::find_if(tasks.begin(), tasks.end(), taskDone);
+	Task& nextTask = this->getNextTask();
+	// need the iterator of the task so I can loop starting from this task
+	auto next = std::find(tasks.begin(), tasks.end(), nextTask);
 	if (next == tasks.end())
 		return;
 	for (auto t = next; t != tasks.end(); t++) {

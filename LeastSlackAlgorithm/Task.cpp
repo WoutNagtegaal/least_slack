@@ -75,6 +75,10 @@ void Task::setEarliestStartTime(unsigned short earliestStartTime) {
 	this->earliestStartTime = earliestStartTime;
 }
 
+bool Task::operator ==(const Task &rhs) {
+	return this->taskId == rhs.taskId;
+}
+
 Task& Task::operator=(const Task &rhs) {
 	if (this != &rhs) {
 		taskId = rhs.taskId;
