@@ -56,8 +56,12 @@ void JobFactory::initMachines() {
 }
 
 bool JobFactory::allJobsDone() {
-	// when all jobs are moved to the finished job vector the task is done
-	return jobs.size() == 0;
+	for(Job&j:jobs) {
+		if (!j.jobDone(currentTime)) {
+			return false;
+		}
+	}
+	return true;
 }
 
 void JobFactory::sortJobsByJobId() {
@@ -74,7 +78,7 @@ void JobFactory::calculateSlack() {
 	for (Job &j : this->jobs) {
 		// busy jobs already have the correct values saved, so they don't have
 		// to be updated every time
-		if (j.jobBusy(currentTime))
+		if (j.jobBusy(currentTime) || j.jobDone(currentTime))
 			continue;
 		Task &current = j.getNextTask();
 
@@ -101,25 +105,10 @@ void JobFactory::sortJobsBySlack() {
 
 void JobFactory::printEndResults() {
 	// print the finished job in order of job id, else checks will fail
-	auto sort = [](const Job &a, const Job &b) {
-		return a.getJobId() < b.getJobId();
-	};
-	std::sort(finishedJobs.begin(), finishedJobs.end(), sort);
-	for (Job &j : finishedJobs) {
+	this->sortJobsByJobId();
+	for (Job &j : jobs) {
 		std::cout << j.getJobId() << "\t";
 		j.printEndResult();
-	}
-}
-
-void JobFactory::removeFinishedJobs() {
-	// it is unnecessary to loop over already finished jobs, so we save them in a separate vector
-	for (auto j = jobs.begin(); j < jobs.end();) {
-		if (j->jobDone(currentTime)) {
-			finishedJobs.push_back(*j);
-			j = jobs.erase(j);
-		} else {
-			++j;
-		}
 	}
 }
 
@@ -133,13 +122,12 @@ unsigned short JobFactory::getLongestJobDuration() {
 
 void JobFactory::schedule() {
 	while (!allJobsDone()) {
-		this->removeFinishedJobs();
 		this->calculateSlack();
 		this->sortJobsBySlack();
 
 		// update every job, not const because a new task will possibly start
 		for (Job &j : jobs) {
-			if (j.jobBusy(currentTime)) {
+			if (j.jobBusy(currentTime) || j.jobDone(currentTime)) {
 				continue;
 			}
 			Task &current = j.getNextTask();

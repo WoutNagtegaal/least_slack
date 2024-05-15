@@ -30,7 +30,6 @@ public:
 	void calculateSlack();
 	void sortJobsByJobId();
 	void sortJobsBySlack();
-	void removeFinishedJobs();
 
 	bool allJobsDone();
 
@@ -51,7 +50,6 @@ private:
 	unsigned short nJobs;
 	unsigned short currentTime;
 	std::vector<Job> jobs;
-	std::vector<Job> finishedJobs;
 	std::vector<Machine> machines;
 	std::set<unsigned short> globalTimer;
 
