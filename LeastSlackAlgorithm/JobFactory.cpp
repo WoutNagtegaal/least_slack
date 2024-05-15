@@ -42,7 +42,7 @@ void JobFactory::initJobs(
 	unsigned short id = 0;
 	for (const std::vector<unsigned short> &job : config) {
 		// each row of the vector contains a job
-		this->jobs.push_back(Job(id, job));
+		this->jobs.emplace_back(Job(id, job));
 		++id;
 	}
 }
