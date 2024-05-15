@@ -148,14 +148,14 @@ void JobFactory::schedule() {
 			// if a machine is already busy another task cannot be started
 			if (!machines[machineNr].machineBusy(currentTime)) {
 				j.startNextTask(currentTime);
-				earliestTimes.insert(current.getEndTime());
+				globalTimer.insert(current.getEndTime());
 				machines[machineNr].startMachine(currentTime, duration);
 			}
 		}
 //		std::sort(earliestTimes.begin(), earliestTimes.end());
-		if (!earliestTimes.empty()) {
-			currentTime = *earliestTimes.begin();
-			earliestTimes.erase(earliestTimes.begin());
+		if (!globalTimer.empty()) {
+			currentTime = *globalTimer.begin();
+			globalTimer.erase(globalTimer.begin());
 		} else {
 			++currentTime;
 		}

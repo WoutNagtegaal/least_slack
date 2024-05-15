@@ -53,7 +53,7 @@ private:
 	std::vector<Job> jobs;
 	std::vector<Job> finishedJobs;
 	std::vector<Machine> machines;
-	std::set<unsigned short> earliestTimes;
+	std::set<unsigned short> globalTimer;
 
 };
 
