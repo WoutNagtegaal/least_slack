@@ -23,7 +23,7 @@ public:
 	JobFactory(unsigned short nMachines, unsigned short nJobs,
 			const std::vector<std::vector<unsigned short>> &config);
 	JobFactory(const JobFactory &rhs);
-	JobFactory(const ConfigReader &rhs);
+	explicit JobFactory(const ConfigReader &rhs);
 
 	void initJobs(const std::vector<std::vector<unsigned short>> &config);
 	void initMachines();

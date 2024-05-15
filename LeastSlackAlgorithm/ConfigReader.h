@@ -15,7 +15,7 @@
 class ConfigReader {
 public:
 	ConfigReader();
-	ConfigReader(const std::string &filename);
+	explicit ConfigReader(const std::string &filename);
 	ConfigReader(const ConfigReader &rhs);
 
 	bool readConfig();

@@ -92,7 +92,7 @@ ConfigReader::~ConfigReader() {
 std::ostream& operator <<(std::ostream &os, const ConfigReader &configReader) {
 	os << "Jobs: " << configReader.getNJobs() << " Machines: "
 			<< configReader.getNMachines() << std::endl;
-	for (std::vector<unsigned short> jobs : configReader.getConfigValues()) {
+	for (const std::vector<unsigned short>& jobs : configReader.getConfigValues()) {
 		for (unsigned short task : jobs) {
 			std::cout << task << ' ';
 		}

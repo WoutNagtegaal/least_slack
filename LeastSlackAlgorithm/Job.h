@@ -43,7 +43,7 @@ public:
 	virtual ~Job();
 
 private:
-	unsigned short calculateEarliestStartTime(Task &task);
+	unsigned short calculateEarliestStartTime(const Task &task);
 
 	unsigned short jobId;
 	std::vector<Task> tasks;

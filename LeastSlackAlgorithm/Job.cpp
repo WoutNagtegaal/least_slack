@@ -109,7 +109,7 @@ void Job::calculateEarliestStartTimes(unsigned short currentTime) {
 	}
 }
 
-unsigned short Job::calculateEarliestStartTime(Task &task) {
+unsigned short Job::calculateEarliestStartTime(const Task &task) {
 	// I want the task before the current task to read the duration and earliest start time
 	// these can be added together to get the earliest start time of the current task
 	auto getPreviousTask = [task](const Task &a) {

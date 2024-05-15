@@ -32,6 +32,7 @@ JobFactory::JobFactory(const ConfigReader &rhs) {
 	// to create a JobFactory. this make it easier to create a JobFactory in the main
 	this->nMachines = rhs.getNMachines();
 	this->nJobs = rhs.getNJobs();
+	this->currentTime = 0;
 	this->initJobs(rhs.getConfigValues());
 	this->initMachines();
 }
@@ -80,7 +81,7 @@ void JobFactory::calculateSlack() {
 		// to be updated every time
 		if (j.jobBusy(currentTime) || j.jobDone(currentTime))
 			continue;
-		Task &current = j.getNextTask();
+		const Task &current = j.getNextTask();
 
 		unsigned short machineNr = current.getMachineNr();
 		// tasks that use an already busy machine cannot be executed until it is free
@@ -130,11 +131,11 @@ void JobFactory::schedule() {
 			if (j.jobBusy(currentTime) || j.jobDone(currentTime)) {
 				continue;
 			}
-			Task &current = j.getNextTask();
-			unsigned short duration = current.getDuration();
+			const Task &current = j.getNextTask();
 			unsigned short machineNr = current.getMachineNr();
 			// if a machine is already busy another task cannot be started
 			if (!machines[machineNr].machineBusy(currentTime)) {
+				unsigned short duration = current.getDuration();
 				j.startNextTask(currentTime);
 				globalTimer.insert(current.getEndTime());
 				machines[machineNr].startMachine(currentTime, duration);
